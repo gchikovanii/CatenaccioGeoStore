@@ -12,6 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
                                                   options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnectionString")));
+builder.Services.AddScoped(typeof(IRepository<>),typeof(Repository<>));
 builder.Services.AddScoped<IProductRepository,ProductRepository>();
 
 var app = builder.Build();
