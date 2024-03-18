@@ -5,7 +5,9 @@ namespace CatenaccioStore.Core.Repositories.Specifications
 {
     public class ProductsWithTypesAndBrandsSpecification : BaseSpecification<Product>
     {
-        public ProductsWithTypesAndBrandsSpecification(string sort)
+        public ProductsWithTypesAndBrandsSpecification(string sort, int? brandId, int? typeId) 
+            : base(i => (!brandId.HasValue || i.ProductBrandId == brandId) && 
+            (!typeId.HasValue || i.ProductTypeId == typeId))
         {
             AddInclude(i => i.ProductType);
             AddInclude(i => i.ProductBrand);
