@@ -1,24 +1,19 @@
-using CatenaccioStore.Core.Repositories.Abstraction;
+using CatenaccioStore.API.Infrastructure.Extensions;
+using CatenaccioStore.API.Infrastructure.Middleware;
 using CatenaccioStore.Infrastructure.DaataSeeding;
 using CatenaccioStore.Infrastructure.DataContext;
-using CatenaccioStore.Infrastructure.Helpers;
-using CatenaccioStore.Infrastructure.Repositories.Implementation;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-                                                  options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnectionString")));
-builder.Services.AddScoped(typeof(IRepository<>),typeof(Repository<>));
-builder.Services.AddScoped<IProductRepository,ProductRepository>();
-builder.Services.AddAutoMapper(typeof(MappingProfiles));
+builder.Services.AddServices(builder.Configuration);
+
 
 var app = builder.Build();
 
+app.UseMiddleware<ExceptionMiddleware>();
+app.UseStatusCodePagesWithReExecute("/errors/{0}");
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
