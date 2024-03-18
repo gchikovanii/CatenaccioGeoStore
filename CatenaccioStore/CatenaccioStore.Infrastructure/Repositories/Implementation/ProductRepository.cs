@@ -1,8 +1,8 @@
-﻿using CatenaccioStore.Core.Entities;
+﻿using AutoMapper;
+using CatenaccioStore.API.DTOs;
+using CatenaccioStore.Core.Entities;
 using CatenaccioStore.Core.Repositories.Abstraction;
 using CatenaccioStore.Core.Repositories.Specifications;
-using CatenaccioStore.Infrastructure.DataContext;
-using Microsoft.EntityFrameworkCore;
 
 namespace CatenaccioStore.Infrastructure.Repositories.Implementation
 {
@@ -11,18 +11,20 @@ namespace CatenaccioStore.Infrastructure.Repositories.Implementation
         private readonly IRepository<Product> _productRepo;
         private readonly IRepository<ProductBrand> _productBrandRepo;
         private readonly IRepository<ProductType> _productTypeRepo;
-
-        public ProductRepository(IRepository<Product> productRepo, IRepository<ProductBrand> productBrandRepo, IRepository<ProductType> productTypeRepo)
+        private readonly IMapper _mapper;
+        public ProductRepository(IRepository<Product> productRepo, IRepository<ProductBrand> productBrandRepo, IRepository<ProductType> productTypeRepo, IMapper mapper)
         {
             _productRepo = productRepo;
             _productBrandRepo = productBrandRepo;
             _productTypeRepo = productTypeRepo;
+            _mapper = mapper;
         }
 
-        public async Task<IReadOnlyList<Product>> GetProductsAsync(CancellationToken token)
+        public async Task<IReadOnlyList<ProductDto>> GetProductsAsync(CancellationToken token)
         {
             var spec = new ProductsWithTypesAndBrandsSpecification();
-            return await _productRepo.ListAsync(token, spec).ConfigureAwait(false);
+            var products = await _productRepo.ListAsync(token, spec).ConfigureAwait(false);
+            return _mapper.Map<IReadOnlyList<Product>, IReadOnlyList<ProductDto>>(products);
         }
 
         public async Task<IReadOnlyList<ProductType>> GetProductTypesAsync(CancellationToken token)
@@ -35,10 +37,11 @@ namespace CatenaccioStore.Infrastructure.Repositories.Implementation
             return await _productBrandRepo.ListAllAsync(token).ConfigureAwait(false);
         }
 
-        public async Task<Product> GetProductByIdAsync(CancellationToken token, int id)
+        public async Task<ProductDto> GetProductByIdAsync(CancellationToken token, int id)
         {
             var spec = new ProductsWithTypesAndBrandsSpecification(id);
-            return await _productRepo.GetEntityWithSpec(token, spec).ConfigureAwait(false);
+            var products = await _productRepo.GetEntityWithSpec(token, spec).ConfigureAwait(false);
+            return _mapper.Map<Product, ProductDto>(products);
         }
     }
 }

@@ -164,3 +164,5 @@ D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\runtime
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\obj\Debug\net8.0\CatenaccioStore.API.sourcelink.json
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\AutoMapper.dll
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\CatenaccioStore.API.staticwebassets.runtime.json

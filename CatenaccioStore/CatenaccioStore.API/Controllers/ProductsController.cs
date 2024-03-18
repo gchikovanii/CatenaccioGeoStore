@@ -1,4 +1,5 @@
-﻿using CatenaccioStore.Core.Entities;
+﻿using CatenaccioStore.API.DTOs;
+using CatenaccioStore.Core.Entities;
 using CatenaccioStore.Core.Repositories.Abstraction;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,18 +13,17 @@ namespace CatenaccioStore.API.Controllers
         {
             _productRepository = productRepository;
         }
+        [HttpGet("{id}")]
+        public async Task<ActionResult<List<ProductDto>>> GetProduct(CancellationToken token, int id)
+        {
+            var result = await _productRepository.GetProductByIdAsync(token, id);
+            return Ok(result);
+        }
 
         [HttpGet]
         public async Task<ActionResult<List<Product>>> GetProducts(CancellationToken token)
         {
             return Ok(await _productRepository.GetProductsAsync(token));
-        }
-
-
-        [HttpGet("{id}")]
-        public async Task<ActionResult<List<Product>>> GetProduct(CancellationToken token,int id)
-        {
-            return Ok(await _productRepository.GetProductByIdAsync(token,id));
         }
 
         [HttpGet("brands")]

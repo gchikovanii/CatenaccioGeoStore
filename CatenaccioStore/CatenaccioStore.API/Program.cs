@@ -1,6 +1,7 @@
 using CatenaccioStore.Core.Repositories.Abstraction;
 using CatenaccioStore.Infrastructure.DaataSeeding;
 using CatenaccioStore.Infrastructure.DataContext;
+using CatenaccioStore.Infrastructure.Helpers;
 using CatenaccioStore.Infrastructure.Repositories.Implementation;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,6 +15,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
                                                   options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnectionString")));
 builder.Services.AddScoped(typeof(IRepository<>),typeof(Repository<>));
 builder.Services.AddScoped<IProductRepository,ProductRepository>();
+builder.Services.AddAutoMapper(typeof(MappingProfiles));
 
 var app = builder.Build();
 
@@ -24,7 +26,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseStaticFiles();
 app.UseAuthorization();
 
 app.MapControllers();

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QX92GoNN21cgYWVwYDFyc5DLCPe7Ma4nhcppqmIbJN+aEl8EQ/kPIIxqgaTs1OrDGoUePNjOGNqXH+yYsC6iJQ==",
+  "dgSpecHash": "I88u7GQLJG3GQcuTAHoC50bfL76yrrUsFuv1JmIQMATlwCfGhAhZbv7TV7RCQR5a7XH7P73+9AxLpN7DFdyfHw==",
   "success": true,
   "projectFilePath": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\CatenaccioStore.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\gchik\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\gchik\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\gchik\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\gchik\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
