@@ -3,6 +3,7 @@ using CatenaccioStore.API.DTOs;
 using CatenaccioStore.Core.Entities;
 using CatenaccioStore.Core.Repositories.Abstraction;
 using CatenaccioStore.Core.Repositories.Specifications;
+using CatenaccioStore.Infrastructure.Helpers;
 
 namespace CatenaccioStore.Infrastructure.Repositories.Implementation
 {
@@ -20,11 +21,15 @@ namespace CatenaccioStore.Infrastructure.Repositories.Implementation
             _mapper = mapper;
         }
 
-        public async Task<IReadOnlyList<ProductDto>> GetProductsAsync(CancellationToken token, string sort, int? brandId, int? typeId)
+        public async Task<Pagination<ProductDto>> GetProductsAsync(CancellationToken token, ProductSpecParams productSpecParams)
         {
-            var spec = new ProductsWithTypesAndBrandsSpecification(sort, brandId, typeId);
+            var spec = new ProductsWithTypesAndBrandsSpecification(productSpecParams);
+            var countSpec = new ProductWithFiltersForCountSpecification(productSpecParams);
+            var totalItems = await _productRepo.CountAsync(token, countSpec);
+
             var products = await _productRepo.ListAsync(token, spec).ConfigureAwait(false);
-            return _mapper.Map<IReadOnlyList<Product>, IReadOnlyList<ProductDto>>(products);
+            var data = _mapper.Map<IReadOnlyList<Product>, IReadOnlyList<ProductDto>>(products);
+            return new Pagination<ProductDto>(productSpecParams.PageIndex, productSpecParams.PageSize, totalItems,data);
         }
 
         public async Task<IReadOnlyList<ProductType>> GetProductTypesAsync(CancellationToken token)

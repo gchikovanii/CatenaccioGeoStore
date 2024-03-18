@@ -2,6 +2,7 @@
 using CatenaccioStore.API.Errors;
 using CatenaccioStore.Core.Entities;
 using CatenaccioStore.Core.Repositories.Abstraction;
+using CatenaccioStore.Core.Repositories.Specifications;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CatenaccioStore.API.Controllers
@@ -24,9 +25,9 @@ namespace CatenaccioStore.API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Product>>> GetProducts(CancellationToken token, string? sort, int? brandId, int? typeId)
+        public async Task<ActionResult<List<Product>>> GetProducts(CancellationToken token, [FromQuery]ProductSpecParams productSpecParams)
         {
-            var result = await _productRepository.GetProductsAsync(token, sort, brandId,typeId);
+            var result = await _productRepository.GetProductsAsync(token, productSpecParams);
             if (result == null)
                 return NotFound(new ApiResponse(404));
             return Ok(result);

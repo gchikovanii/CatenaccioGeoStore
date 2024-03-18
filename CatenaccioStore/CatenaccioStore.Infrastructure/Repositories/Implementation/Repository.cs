@@ -17,25 +17,27 @@ namespace CatenaccioStore.Infrastructure.Repositories.Implementation
 
         public async Task<T> GetByIdAsync(CancellationToken token, int id)
         {
-            return await _context.Set<T>().FindAsync(id, token);
+            return await _context.Set<T>().FindAsync(id, token).ConfigureAwait(false);
         }
         public async Task<IReadOnlyList<T>> ListAllAsync(CancellationToken token)
         {
-            return await _context.Set<T>().ToListAsync(token);
+            return await _context.Set<T>().ToListAsync(token).ConfigureAwait(false);
         }
         public async Task<IReadOnlyList<T>> ListAsync(CancellationToken token, ISpecification<T> specification)
         {
-            return await ApplySpecification(specification).ToListAsync(token);
+            return await ApplySpecification(specification).ToListAsync(token).ConfigureAwait(false);
         }
         public async Task<T> GetEntityWithSpec(CancellationToken token, ISpecification<T> specification)
         {
-            return await ApplySpecification(specification).FirstOrDefaultAsync(token);
+            return await ApplySpecification(specification).FirstOrDefaultAsync(token).ConfigureAwait(false);
         }
-
+        public async Task<int> CountAsync(CancellationToken token, ISpecification<T> specification)
+        {
+            return await ApplySpecification(specification).CountAsync(token);
+        }
         private IQueryable<T> ApplySpecification(ISpecification<T> specification)
         {
             return SpecificationEvaluator<T>.GetQuery(_context.Set<T>().AsQueryable(), specification);
         }
-
     }
 }

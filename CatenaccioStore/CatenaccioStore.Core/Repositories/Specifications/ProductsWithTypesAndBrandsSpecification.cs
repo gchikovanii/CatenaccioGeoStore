@@ -5,17 +5,18 @@ namespace CatenaccioStore.Core.Repositories.Specifications
 {
     public class ProductsWithTypesAndBrandsSpecification : BaseSpecification<Product>
     {
-        public ProductsWithTypesAndBrandsSpecification(string sort, int? brandId, int? typeId) 
-            : base(i => (!brandId.HasValue || i.ProductBrandId == brandId) && 
-            (!typeId.HasValue || i.ProductTypeId == typeId))
+        public ProductsWithTypesAndBrandsSpecification(ProductSpecParams productSpecParams) 
+            : base(i => (!productSpecParams.BrandId.HasValue || i.ProductBrandId == productSpecParams.BrandId) && 
+            (!productSpecParams.TypeId.HasValue || i.ProductTypeId == productSpecParams.TypeId))
         {
             AddInclude(i => i.ProductType);
             AddInclude(i => i.ProductBrand);
             AddOrderBy(i => i.Name);
+            ApplyPaging(productSpecParams.PageSize * (productSpecParams.PageIndex - 1), productSpecParams.PageSize);
 
-            if (!string.IsNullOrEmpty(sort))
+            if (!string.IsNullOrEmpty(productSpecParams.Sort))
             {
-                switch (sort)
+                switch (productSpecParams.Sort)
                 {
                     case "priceAsc": 
                            AddOrderBy(p => p.Price);
