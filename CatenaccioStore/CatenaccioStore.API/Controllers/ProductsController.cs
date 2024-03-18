@@ -24,9 +24,9 @@ namespace CatenaccioStore.API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Product>>> GetProducts(CancellationToken token)
+        public async Task<ActionResult<List<Product>>> GetProducts(CancellationToken token, string? sort)
         {
-            var result = await _productRepository.GetProductsAsync(token);
+            var result = await _productRepository.GetProductsAsync(token, sort);
             if (result == null)
                 return NotFound(new ApiResponse(404));
             return Ok(result);

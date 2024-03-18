@@ -20,9 +20,9 @@ namespace CatenaccioStore.Infrastructure.Repositories.Implementation
             _mapper = mapper;
         }
 
-        public async Task<IReadOnlyList<ProductDto>> GetProductsAsync(CancellationToken token)
+        public async Task<IReadOnlyList<ProductDto>> GetProductsAsync(CancellationToken token, string sort)
         {
-            var spec = new ProductsWithTypesAndBrandsSpecification();
+            var spec = new ProductsWithTypesAndBrandsSpecification(sort);
             var products = await _productRepo.ListAsync(token, spec).ConfigureAwait(false);
             return _mapper.Map<IReadOnlyList<Product>, IReadOnlyList<ProductDto>>(products);
         }
