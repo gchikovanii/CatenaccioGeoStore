@@ -14,14 +14,26 @@ namespace CatenaccioStore.Infrastructure.Repositories.Implementation
             _context = context;
         }
 
-        public async Task<IReadOnlyList<Product>> GetPoroductsAsync(CancellationToken token)
+        public async Task<IReadOnlyList<Product>> GetProductsAsync(CancellationToken token)
         {
-            return await _context.Products.ToListAsync(token);
+            return await _context.Products.Include(i => i.ProductType).Include(i => i.ProductBrand).ToListAsync(token);
+        }
+
+        public async Task<IReadOnlyList<ProductType>> GetProductTypesAsync(CancellationToken token)
+        {
+            return await _context.ProductTypes.ToListAsync(token);
+        }
+
+        public async Task<IReadOnlyList<ProductBrand>> GetProductBrandsAsync(CancellationToken token)
+        {
+            return await _context.ProductBrands.ToListAsync(token);
         }
 
         public async Task<Product> GetProductByIdAsync(CancellationToken token,int id)
         {
-            return await _context.Products.FindAsync(id,token);
+            return await _context.Products
+                .Include(i => i.ProductType).Include(i => i.ProductBrand)
+                .FirstOrDefaultAsync(i => i.Id == id,token);
         }
     }
 }

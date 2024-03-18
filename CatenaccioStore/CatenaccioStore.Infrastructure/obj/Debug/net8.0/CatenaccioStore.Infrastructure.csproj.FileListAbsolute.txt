@@ -15,3 +15,4 @@ D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Infrastructure\obj\Debug\net
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Infrastructure\bin\Debug\net8.0\CatenaccioStore.Core.dll
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Infrastructure\bin\Debug\net8.0\CatenaccioStore.Core.pdb
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Infrastructure\obj\Debug\net8.0\CatenaccioStore.Infrastructure.csproj.CopyComplete
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Infrastructure\obj\Debug\net8.0\CatenaccioStore.Infrastructure.sourcelink.json
