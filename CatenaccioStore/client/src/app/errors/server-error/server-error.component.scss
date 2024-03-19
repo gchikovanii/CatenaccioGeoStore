@@ -1,0 +1,27 @@
+.container {
+    margin-top: 50px;
+  }
+  
+  .error-title {
+    font-size: 6em;
+    color: #dc3545; // Bootstrap's danger color
+  }
+  
+  .error-message {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .error-description {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff; // Bootstrap's primary color
+    border-color: #007bff;
+    &:hover {
+      background-color: #0056b3; // Darken the primary color on hover
+      border-color: #0056b3;
+    }
+  }

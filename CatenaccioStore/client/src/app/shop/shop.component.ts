@@ -5,6 +5,8 @@ import { error } from 'console';
 import { Brand } from '../models/Brand';
 import { Type } from '../models/Type';
 import { ShopParams } from '../models/ShopParams';
+import { ToastrService } from 'ngx-toastr';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-shop',
@@ -27,7 +29,7 @@ export class ShopComponent implements OnInit {
   ];
   totalCount = 0;
 
-  constructor(private shopService: ShopService){}
+  constructor(private shopService: ShopService, private matSnack: MatSnackBar){}
 
   ngOnInit(): void {
     this.getProducts();
@@ -101,4 +103,8 @@ export class ShopComponent implements OnInit {
     this.shopParams = new ShopParams();
     this.getProducts();
   }
+
+
+  
+
 }
