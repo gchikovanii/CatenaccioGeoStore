@@ -9,7 +9,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ShopComponent } from './shop/shop.component';
 import { ProductItemComponent } from './shop/product-item/product-item.component';
 import {PaginationModule} from 'ngx-bootstrap/pagination';
-import { PagingHeaderComponent } from './shared/paging-header/paging-header.component'
+import { PagingHeaderComponent } from './shared/paging-header/paging-header.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +17,7 @@ import { PagingHeaderComponent } from './shared/paging-header/paging-header.comp
     NavBarComponent,
     ShopComponent,
     ProductItemComponent,
-    PagingHeaderComponent
-    
+    PagingHeaderComponent,
   ],
   imports: [
     BrowserModule,
