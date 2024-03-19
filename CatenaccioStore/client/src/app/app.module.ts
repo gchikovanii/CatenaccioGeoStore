@@ -19,6 +19,8 @@ import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { LoadingInterceptor } from './errors/interceptors/loading.interceptor';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 
 @NgModule({
@@ -40,6 +42,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     FontAwesomeModule,
     HttpClientModule,
     MatSnackBarModule,
+    NgxSpinnerModule,
     PaginationModule.forRoot(),
     TooltipModule.forRoot(),
     ToastrModule.forRoot(
@@ -52,6 +55,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
   providers: [
     provideClientHydration(),
     {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true},
+    {provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true},
+
     provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
