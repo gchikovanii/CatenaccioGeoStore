@@ -10,7 +10,7 @@
       <span class="mb-2">{{product.price | currency}}</span>
       <div class="btn-group mt-auto">
         <button class="btn btn-outline-secondary me-2"><fa-icon [icon]="cart"></fa-icon></button>
-        <button class="btn btn-outline-secondary">View</button>
+        <button routerLink="/shop/{{product.id}}" class="btn btn-outline-secondary">View</button>
       </div>
       <small class="text-muted mt-2">Quantity: {{product.quantity}}</small>
     </div>

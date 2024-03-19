@@ -1,9 +1,9 @@
 <nav class="d-flex flex-row align-items-center justify-content-between p-3 px-4 mb-3 bg-white border-bottom fixed-top shadow-sm">
-    <img src="../../assets/images/logo.png" alt="logo" style="max-height: 70px;">
+    <img src="../../assets/images/logo.png" class="logo" alt="logo" style="max-height: 70px;">
     <nav class="my-2 text-uppercase fs-4">
-      <a href="#" class="p-2 text-dark text-decoration-none">Home</a>
-      <a href="#" class="p-2 text-dark text-decoration-none">Shop</a>
-      <a href="#" class="p-2 text-dark text-decoration-none">Contact</a>
+      <a class="mx-2" routerLink="/"  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+      <a class="mx-2" routerLink="/shop" routerLinkActive="active">Shop</a>
+      <a class="mx-2" routerLink="/contact" routerLinkActive="active">Contact</a>
     </nav>
     <div class="d-flex align-items-center">
       <a class="position-relative" href="">

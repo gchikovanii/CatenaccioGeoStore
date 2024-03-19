@@ -10,6 +10,8 @@ import { ShopComponent } from './shop/shop.component';
 import { ProductItemComponent } from './shop/product-item/product-item.component';
 import {PaginationModule} from 'ngx-bootstrap/pagination';
 import { PagingHeaderComponent } from './shared/paging-header/paging-header.component';
+import { HomeComponent } from './home/home.component';
+import { ProductDetailsComponent } from './shop/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { PagingHeaderComponent } from './shared/paging-header/paging-header.comp
     ShopComponent,
     ProductItemComponent,
     PagingHeaderComponent,
+    HomeComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     BrowserModule,
