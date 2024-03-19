@@ -28,6 +28,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "bootswatch": "^5.3.3",
     "express": "^4.18.2",
     "font-awesome": "^4.7.0",
     "ngx-bootstrap": "^12.0.0",
