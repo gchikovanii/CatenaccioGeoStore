@@ -8,10 +8,10 @@ namespace CatenaccioStore.Core.Repositories.Specifications
 {
     public class ProductSpecParams
     {
-        private const int MaxPageSize = 50;
+        private const int MaxPageSize = 18;
         public int PageIndex { get; set; } = 1;
 
-        private int _pageSize = 10;
+        private int _pageSize = 9;
         public int PageSize
         {
             get => _pageSize;

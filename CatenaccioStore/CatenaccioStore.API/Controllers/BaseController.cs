@@ -3,7 +3,7 @@
 namespace CatenaccioStore.API.Controllers
 {
     [ApiController]
-    [Route("ap/[controller]")]
+    [Route("api/[controller]")]
     public class BaseController : ControllerBase
     {
     }
