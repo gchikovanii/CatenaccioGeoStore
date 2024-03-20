@@ -5,6 +5,7 @@ using CatenaccioStore.API.Infrastructure.Models;
 using CatenaccioStore.Core.DTOs;
 using CatenaccioStore.Core.Entities.Identities;
 using CatenaccioStore.Core.Repositories.Abstraction;
+using CatenaccioStore.Infrastructure.Errors;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -72,6 +73,8 @@ namespace CatenaccioStore.API.Controllers
         [HttpPost("register")]
         public async Task<ActionResult<UserDto>> Register(RegisterDto registerDto)
         {
+            if (CheckEmailExistsAsycn(registerDto.Email).Result.Value)
+                return new BadRequestObjectResult(new ApiValidationErrorResponse {Errors = new[]{"Email address is already in use"}});
             var user = new AppUser { Email = registerDto.Email, DisplayName = registerDto.DisplayName, UserName = registerDto.Email };
             var result = await _userManager.CreateAsync(user,registerDto.Password);
             if(!result.Succeeded)

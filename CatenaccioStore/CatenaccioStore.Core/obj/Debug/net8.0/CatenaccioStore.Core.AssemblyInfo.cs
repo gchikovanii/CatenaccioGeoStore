@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CatenaccioStore.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d3d29ade205aa23577265500eba49630dae6b41")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+133c48cb1f92d8b3a87c1f0c56878c5ec8401b13")]
 [assembly: System.Reflection.AssemblyProductAttribute("CatenaccioStore.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CatenaccioStore.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
