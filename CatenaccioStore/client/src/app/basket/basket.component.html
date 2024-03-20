@@ -1,0 +1,68 @@
+<div class="container">
+    <div *ngIf="(basketService.basketSource$ | async) === null">
+        <p>There are no items in your basket</p>
+    </div>
+    <ng-container *ngIf="(basketService.basketSource$ | async) as basket">
+        <div class="container">
+            <div class="row">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="bg-light text-uppercase">
+                            <tr>
+                                <th><div class="py-2">Product</div></th>
+                                <th><div class="py-2">Price</div></th>
+                                <th><div class="py-2">Quantity</div></th>
+                                <th><div class="py-2">Total</div></th>
+                                <th><div class="py-2">Remove</div></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of basket.baksetItems">
+                                <th>
+                                    <div class="p-2 d-inline-blok">
+                                        <img class="img-fluid" src="{{item.pictureUrl}}" alt="{{item.productName}}" style="max-height: 50px;">
+                                        <div class="ms-3 d-inline-block align-middle">
+                                            <h5 class="mb-0">
+                                                <a style="cursor: pointer;" routerLink="/shop/{{item.id}}" class="text-dark text-decoration-none">
+                                                    {{item.productName}}
+                                                </a>
+                                            </h5>
+                                            <span class="text-muted fst-italic">
+                                                Type: {{item.type}}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td class="align-middle"><strong>{{item.price | currency}}</strong></td>
+                                <td class="align-middle">
+                                    <div class="d-flex align-items-center">
+                                        <fa-icon [icon]="minus" class="text-warning me-2"
+                                        (click)="removeItem(item.id,1)"
+                                        style="cursor: pointer; font-size: 1.5em;"></fa-icon>
+                                        <span class="font-wieght-bold" style="font-size: 1.5em;">{{item.quantity}}</span>
+                                        <fa-icon
+                                         [icon]="plus" 
+                                         (click)="incrementQuantity(item)"
+                                         class="text-warning mx-2 ms-2" style="cursor: pointer; font-size: 1.5em;"></fa-icon>
+                                    </div>
+                                </td>
+                                <td class="align-middle"><strong>{{item.price * item.quantity | currency}}</strong></td>
+                                <td class="align-middle" ><a class="text-danger">
+                                    <fa-icon (click)="removeItem(item.id, item.quantity)" [icon]="trash" style="font-size: 1.5em; cursor: pointer;"></fa-icon>
+                                </a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 offset-6">
+                    <app-order-totals></app-order-totals>
+                    <div class="d-grid mb-4">
+                        <a class="btn btn-outline-primary py-2" routerLink="/checkout">Proceed to checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+</div>

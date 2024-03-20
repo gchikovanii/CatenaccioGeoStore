@@ -6,9 +6,11 @@
       <a class="mx-2" routerLink="/contact" routerLinkActive="active">Contact</a>
     </nav>
     <div class="d-flex align-items-center">
-      <a class="position-relative" href="">
+      <a routerLink="/basket" class="position-relative">
         <fa-icon [icon]="cart" class="fa-2x me-5 text-dark"></fa-icon>
-        <div class="cart-no">5</div></a>
+        <div *ngIf="(basketService.basketSource$ | async) as basket" class="cart-no">
+          {{getCount(basket.baksetItems)}} 
+        </div></a>
       <button class="btn btn-outline-success me-2">Login</button>
       <button class="btn btn-outline-success me-3">Sign up</button>
       </div>

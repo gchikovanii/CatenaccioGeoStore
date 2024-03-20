@@ -1,19 +1,38 @@
-<div class="row" *ngIf="product">
-    <div class="col-6">
-        <img src="{{product.pictureUrl}}" alt="{{product.name}}" class="w-100">
-    </div>  
-    <div class="col-6 mt-5">
-        <h2>{{product.name}}</h2>
-        <p style="font-size: 2em;">{{product.price | currency}}</p>
-        <div class="d-flex justify-content-start align-items-center">
-            <fa-icon [icon]="minus" class="text-warning me-2" style="cursor: pointer; font-size: 2em;"></fa-icon>
-            <span class="font-wieght-bold" style="font-size: 1.5em;">1</span>
-            <fa-icon [icon]="plus" class="text-warning me-2 ms-2" style="cursor: pointer; font-size: 2em;"></fa-icon>
-            <button class="btn btn-outline-secondary ms-4">Add To Cart</button>
-        </div>
-        <div class="row mt-4">
-            <h4>Description</h4>
-            <p>{{product.description}}</p>
-        </div>
-    </div>  
+<div class="container">
+    <div class="row" *ngIf="product">
+        <div class="col-6">
+            <img src="{{product.pictureUrl}}" alt="{{product.name}}" class="w-100">
+        </div>  
+        <div class="col-6 mt-5">
+            <h2>{{product.name}}</h2>
+            <p style="font-size: 2em;">{{product.price | currency}}</p>
+            <ng-container *ngIf="product.quantity <= 10"> 
+                <h4 class="text-danger">In stock: {{product.quantity}} pices left</h4>
+            </ng-container>
+            <ng-container *ngIf="product.quantity > 10"> 
+                <h4 class="text-primary">In stock: {{product.quantity}} pices</h4>
+            </ng-container>
+
+            <h5 class="text-primary mb-3" *ngIf="quantityInBasket > 0">
+                You have {{quantityInBasket}} of this item in your basket
+            </h5>
+
+
+            <div class="d-flex justify-content-start align-items-center">
+                <fa-icon
+                (click)="decerementQuantity()"
+                [icon]="minus" class="text-warning me-2" style="cursor: pointer; font-size: 2em;"></fa-icon>
+                <span class="font-wieght-bold" style="font-size: 1.5em;">{{quantity}}</span>
+                <fa-icon
+                (click)="inerementQuantity()"
+                [icon]="plus" class="text-warning me-2 ms-2" style="cursor: pointer; font-size: 2em;"></fa-icon>
+                <button (click)="updateBasket()" [disabled]="quantity === quantityInBasket" class="btn btn-outline-primary ms-4">{{buttonText}}</button>
+            </div>
+            <div class="row mt-4">
+                <h4>Description</h4>
+                <p>{{product.description}}</p>
+            </div>
+        </div>  
+    </div>
+    
 </div>

@@ -21,6 +21,9 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { LoadingInterceptor } from './errors/interceptors/loading.interceptor';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { BasketComponent } from './basket/basket.component';
+import { OrderTotalsComponent } from './shared/order-totals/order-totals.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 @NgModule({
@@ -34,6 +37,9 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     ProductDetailsComponent,
     NotFoundComponent,
     ServerErrorComponent,
+    BasketComponent,
+    OrderTotalsComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,
