@@ -174,3 +174,4 @@ D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\Microso
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

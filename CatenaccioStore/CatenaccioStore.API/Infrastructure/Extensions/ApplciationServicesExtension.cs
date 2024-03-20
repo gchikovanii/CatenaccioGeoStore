@@ -3,6 +3,7 @@ using CatenaccioStore.Infrastructure.DataContext;
 using CatenaccioStore.Infrastructure.Errors;
 using CatenaccioStore.Infrastructure.Helpers;
 using CatenaccioStore.Infrastructure.Repositories.Implementation;
+using CatenaccioStore.Infrastructure.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StackExchange.Redis;
@@ -25,6 +26,7 @@ namespace CatenaccioStore.API.Infrastructure.Extensions
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IBasketRepository, BasketRepository>();
+            services.AddScoped<ITokenService, TokenService>();
             services.AddAutoMapper(typeof(MappingProfiles));
             services.Configure<ApiBehaviorOptions>(opt =>
             {
