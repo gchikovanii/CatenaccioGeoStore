@@ -24,6 +24,12 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { BasketComponent } from './basket/basket.component';
 import { OrderTotalsComponent } from './shared/order-totals/order-totals.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { AccountComponent } from './account/account.component';
+import { LoginComponent } from './account/login/login.component';
+import { RegisterComponent } from './account/register/register.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TextInputComponent } from './shared/text-input/text-input.component';
 
 
 @NgModule({
@@ -40,6 +46,10 @@ import { CheckoutComponent } from './checkout/checkout.component';
     BasketComponent,
     OrderTotalsComponent,
     CheckoutComponent,
+    AccountComponent,
+    LoginComponent,
+    RegisterComponent,
+    TextInputComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,6 +59,8 @@ import { CheckoutComponent } from './checkout/checkout.component';
     HttpClientModule,
     MatSnackBarModule,
     NgxSpinnerModule,
+    ReactiveFormsModule,
+    BsDropdownModule.forRoot(),
     PaginationModule.forRoot(),
     TooltipModule.forRoot(),
     ToastrModule.forRoot(

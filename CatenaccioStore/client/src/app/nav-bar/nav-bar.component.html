@@ -11,7 +11,37 @@
         <div *ngIf="(basketService.basketSource$ | async) as basket" class="cart-no">
           {{getCount(basket.baksetItems)}} 
         </div></a>
-      <button class="btn btn-outline-success me-2">Login</button>
-      <button class="btn btn-outline-success me-3">Sign up</button>
+      <ng-container *ngIf="(accountService.currentUserSource$ | async) === null">
+        <a routerLink="/login" class="btn btn-outline-success me-2">Login</a>
+        <a routerLink="/register" class="btn btn-outline-success me-3">Sign up</a>
+      </ng-container>
+      <ng-container *ngIf="(accountService.currentUserSource$ | async) as user">
+        <div class="dropdown ms-3 me-5" style="cursor: pointer;" dropdown>
+          <a dropdownToggle class="dropdown-toggle">
+            <strong>Welcome, {{user.displayName}}</strong>
+          </a>
+          <ul *dropdownMenu class="dropdown-menu dropdown-menu-right">
+             <li class="py-1">
+              <a routerLink="/basket" class="dropdown-item">
+                <fa-icon [icon]="cart" class="me-3 text-dark"></fa-icon>
+                <span>View Basket</span>
+              </a>
+             </li>
+             <li class="py-1">
+              <a routerLink="/orders" class="dropdown-item">
+                <fa-icon [icon]="history" class="me-3 text-dark"></fa-icon>
+                <span>View Orders</span>
+              </a>
+             </li>
+             <div class="dropdown-divider"></div>
+             <li class="py-1">
+              <a (click)="accountService.logout()" class="dropdown-item">
+                <fa-icon [icon]="signout" class="me-3 text-dark"></fa-icon>
+                <span>Log Out</span>
+              </a>
+             </li>
+          </ul>
+        </div>
+      </ng-container>
       </div>
   </nav>

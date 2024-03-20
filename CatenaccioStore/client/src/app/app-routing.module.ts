@@ -7,11 +7,15 @@ import { ServerErrorComponent } from './errors/server-error/server-error.compone
 import { NotFoundComponent } from './errors/not-found/not-found.component';
 import { BasketComponent } from './basket/basket.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { LoginComponent } from './account/login/login.component';
+import { RegisterComponent } from './account/register/register.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent, data: {breadcrumb: 'Home'}},
   {path:'server-error', component: ServerErrorComponent},
   {path:'not-found', component: NotFoundComponent},
+  {path:'login', component: LoginComponent},
+  {path:'register', component: RegisterComponent},
   {path:'basket', component: BasketComponent},
   {path:'checkout', component: CheckoutComponent},
   {path:'shop', component: ShopComponent},
