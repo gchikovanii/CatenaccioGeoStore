@@ -166,3 +166,5 @@ D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\runtime
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\obj\Debug\net8.0\CatenaccioStore.API.sourcelink.json
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\AutoMapper.dll
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\CatenaccioStore.API.staticwebassets.runtime.json
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\StackExchange.Redis.dll

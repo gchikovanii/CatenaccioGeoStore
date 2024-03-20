@@ -5,6 +5,7 @@ using CatenaccioStore.Infrastructure.Helpers;
 using CatenaccioStore.Infrastructure.Repositories.Implementation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using StackExchange.Redis;
 
 namespace CatenaccioStore.API.Infrastructure.Extensions
 {
@@ -16,8 +17,14 @@ namespace CatenaccioStore.API.Infrastructure.Extensions
             services.AddSwaggerGen();
             services.AddDbContext<ApplicationDbContext>(options =>
                                                               options.UseSqlite(config.GetConnectionString("DefaultConnectionString")));
+            services.AddSingleton<IConnectionMultiplexer>(i =>
+            {
+                var options = ConfigurationOptions.Parse(config.GetConnectionString("Redis"));
+                return ConnectionMultiplexer.Connect(options);
+            });
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IBasketRepository, BasketRepository>();
             services.AddAutoMapper(typeof(MappingProfiles));
             services.Configure<ApiBehaviorOptions>(opt =>
             {

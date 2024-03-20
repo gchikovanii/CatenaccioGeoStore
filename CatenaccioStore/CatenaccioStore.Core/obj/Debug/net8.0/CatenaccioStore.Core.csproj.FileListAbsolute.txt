@@ -10,3 +10,4 @@ D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Core\obj\Debug\net8.0\refint
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Core\obj\Debug\net8.0\CatenaccioStore.Core.pdb
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Core\obj\Debug\net8.0\ref\CatenaccioStore.Core.dll
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Core\obj\Debug\net8.0\CatenaccioStore.Core.sourcelink.json
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Core\obj\Debug\net8.0\CatenaccioStore.Core.csproj.AssemblyReference.cache

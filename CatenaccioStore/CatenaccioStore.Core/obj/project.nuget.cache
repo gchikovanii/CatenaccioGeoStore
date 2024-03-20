@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "DAU/yOMqnVUZkFTX5oEnmkZ3Z0oBF2dI/ke1uC5rrkRWGzjdS2Fp6vW3z9PRHm2KJm4I0UmmoLsHRkuwvL2siA==",
+  "dgSpecHash": "RF1MXyVHzdrx7gM16IfbuSkyPQMCRspoaIzKrOWMijAHUes7Ybjc3CbeTCaqKuSSPRQF9gEQXEpgbjvHahjcOw==",
   "success": true,
   "projectFilePath": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.Core\\CatenaccioStore.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\gchik\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\gchik\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "C:\\Users\\gchik\\.nuget\\packages\\stackexchange.redis\\2.7.33\\stackexchange.redis.2.7.33.nupkg.sha512",
+    "C:\\Users\\gchik\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
