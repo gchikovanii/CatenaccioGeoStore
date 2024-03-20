@@ -168,3 +168,9 @@ D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\AutoMap
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\CatenaccioStore.API.staticwebassets.runtime.json
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\StackExchange.Redis.dll
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
