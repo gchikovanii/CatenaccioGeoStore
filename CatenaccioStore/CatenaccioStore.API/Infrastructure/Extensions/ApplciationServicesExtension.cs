@@ -14,8 +14,7 @@ namespace CatenaccioStore.API.Infrastructure.Extensions
     {
         public static IServiceCollection AddServices(this IServiceCollection services, IConfiguration config)
         {
-            services.AddEndpointsApiExplorer();
-            services.AddSwaggerGen();
+
             services.AddDbContext<ApplicationDbContext>(options =>
                                                               options.UseSqlite(config.GetConnectionString("DefaultConnectionString")));
             services.AddSingleton<IConnectionMultiplexer>(i =>

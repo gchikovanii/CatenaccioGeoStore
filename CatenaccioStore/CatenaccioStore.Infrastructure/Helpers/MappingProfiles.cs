@@ -15,6 +15,8 @@ namespace CatenaccioStore.Infrastructure.Helpers
                 .ForMember(i => i.ProductBrand, o => o.MapFrom(s => s.ProductBrand.Name))
                 .ForMember(i => i.PictureUrl, o => o.MapFrom<ProductUrlResolver>());
             CreateMap<Address, AddressDto>().ReverseMap();
+            CreateMap<CustomerBasketDto, CustomerBasket>();
+            CreateMap<BaksetItemDto, BaksetItem>();
 
         }
     }
