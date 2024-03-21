@@ -5,8 +5,13 @@
     placeholder="{{label}}"
     class="form-control"
     [ngClass]="(control.touched) ? control.invalid ? 'is-invalid' : 'is-valid' : null">
+    <div *ngIf="control.status === 'PENDING'" class="fa fa-spinner fa-spin loader">
+
+    </div>
     <label for="floatingInput">{{label}}</label>
 
     <div *ngIf="control.errors?.['required']" class="invalid-feedback">Please enter your {{label}}</div>
     <div *ngIf="control.errors?.['email']" class="invalid-feedback">Invalid email address</div>
+    <div *ngIf="control.errors?.['pattern']" class="invalid-feedback">Password must include 1 upper case, 1 lower case, 1 number and 1 special char, password length must be at least 8</div>
+    <div *ngIf="control.errors?.['emailExists']" class="invalid-feedback">Email Address is already in use</div>
   </div>

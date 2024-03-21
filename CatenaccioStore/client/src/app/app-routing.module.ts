@@ -9,6 +9,7 @@ import { BasketComponent } from './basket/basket.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { LoginComponent } from './account/login/login.component';
 import { RegisterComponent } from './account/register/register.component';
+import { authGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   {path:'', component: HomeComponent, data: {breadcrumb: 'Home'}},
@@ -17,7 +18,14 @@ const routes: Routes = [
   {path:'login', component: LoginComponent},
   {path:'register', component: RegisterComponent},
   {path:'basket', component: BasketComponent},
-  {path:'checkout', component: CheckoutComponent},
+  {
+    path: '',
+    runGuardsAndResolvers: 'always',
+    canActivate: [authGuard],
+    children: [
+      {path:'checkout', component: CheckoutComponent}
+    ]
+  },
   {path:'shop', component: ShopComponent},
   {path:'shop/:id', component: ProductDetailsComponent},
   {path:'**', redirectTo: '', pathMatch: 'full'},
