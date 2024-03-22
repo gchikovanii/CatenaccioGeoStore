@@ -26,7 +26,9 @@ namespace CatenaccioStore.API.Infrastructure.Extensions
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IBasketRepository, BasketRepository>();
             services.AddScoped<ITokenService, TokenService>();
-            services.AddAutoMapper(typeof(MappingProfiles));
+            services.AddScoped<IOrderService, OrderService>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddAutoMapper(typeof(MappingProfiles)); 
             services.Configure<ApiBehaviorOptions>(opt =>
             {
                 opt.InvalidModelStateResponseFactory = actionContext =>

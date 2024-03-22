@@ -1,0 +1,30 @@
+[
+  {
+    "Id": 1,
+    "ShortName": "Luxury",
+    "Description": "Catenaccio Delivery, Fastest delivery time",
+    "DeliveryTime": "1-2 Days",
+    "Price": 15
+  },
+  {
+    "Id": 2,
+    "ShortName": "Express",
+    "Description": "Onway delivery, Get it within 5 days",
+    "DeliveryTime": "2-5 Days",
+    "Price": 5
+  },
+  {
+    "Id": 20,
+    "ShortName": "FedEx",
+    "Description": "Sending to the world-wide",
+    "DeliveryTime": "5-10 Days",
+    "Price": 2
+  },
+  {
+    "Id": 4,
+    "ShortName": "FREE",
+    "Description": "Free! You get what you pay for",
+    "DeliveryTime": "5-7 Days",
+    "Price": 0
+  }
+]

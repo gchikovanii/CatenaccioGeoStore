@@ -1,6 +1,6 @@
 ﻿using CatenaccioStore.Core.Entities;
+using CatenaccioStore.Core.Entities.Orders;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection;
 
 namespace CatenaccioStore.Infrastructure.DataContext
 {
@@ -13,6 +13,9 @@ namespace CatenaccioStore.Infrastructure.DataContext
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductBrand> ProductBrands { get; set; }
         public DbSet<ProductType> ProductTypes { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
+        public DbSet<DeliveryMethod> DeliveryMethods { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

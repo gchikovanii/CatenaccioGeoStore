@@ -1,4 +1,5 @@
 ﻿using CatenaccioStore.Core.Entities;
+using CatenaccioStore.Core.Entities.Orders;
 using CatenaccioStore.Infrastructure.DataContext;
 using System.Text.Json;
 
@@ -25,6 +26,12 @@ namespace CatenaccioStore.Infrastructure.DaataSeeding
                 var productsData = File.ReadAllText("../CatenaccioStore.Infrastructure/DaataSeeding/SeedData/products.json");
                 var products = JsonSerializer.Deserialize<List<Product>>(productsData);
                 context.Products.AddRange(products);
+            }
+            if (!context.DeliveryMethods.Any())
+            {
+                var deliveryMethodsData = File.ReadAllText("../CatenaccioStore.Infrastructure/DaataSeeding/SeedData/delivery.json");
+                var delivery = JsonSerializer.Deserialize<List<DeliveryMethod>>(deliveryMethodsData);
+                context.DeliveryMethods.AddRange(delivery);
             }
             if (context.ChangeTracker.HasChanges())
                 await context.SaveChangesAsync();

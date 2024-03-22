@@ -10,6 +10,8 @@ namespace CatenaccioStore.Core.Repositories.Abstraction
         Task<T> GetEntityWithSpec(CancellationToken token,ISpecification<T> specification);
         Task<IReadOnlyList<T>> ListAsync(CancellationToken token, ISpecification<T> specification);
         Task<int> CountAsync(CancellationToken token, ISpecification<T> specification);
-
+        void Add(T entity); 
+        void Update(T entity);
+        void Delete(T entity);
     }
 }
