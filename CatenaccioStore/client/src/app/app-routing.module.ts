@@ -11,9 +11,11 @@ import { LoginComponent } from './account/login/login.component';
 import { RegisterComponent } from './account/register/register.component';
 import { authGuard } from './guards/auth.guard';
 import { CheckoutSuccessComponent } from './checkout/checkout-success/checkout-success.component';
+import { OrdersComponent } from './orders/orders.component';
+import { OrderDetailedComponent } from './order-detailed/order-detailed.component';
 
 const routes: Routes = [
-  {path:'', component: HomeComponent, data: {breadcrumb: 'Home'}},
+  {path:'', component: HomeComponent},
   {path:'server-error', component: ServerErrorComponent},
   {path:'not-found', component: NotFoundComponent},
   {path:'login', component: LoginComponent},
@@ -29,7 +31,8 @@ const routes: Routes = [
     ]
   },
   {path:'shop', component: ShopComponent},
-  {path:'shop/:id', component: ProductDetailsComponent},
+  {path:'orders', component: OrdersComponent},
+  {path: 'orders/:id', component: OrderDetailedComponent},
   {path:'**', redirectTo: '', pathMatch: 'full'},
 ];
 

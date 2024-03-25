@@ -14,6 +14,7 @@ export interface Order {
     deliveryMethod: string //Maybe DeliveryMethod?
     orderItems: OrderItem[]
     subtotal: number
+    total: number
     orderStatus: number
     paymentIntentId: any
     id: number

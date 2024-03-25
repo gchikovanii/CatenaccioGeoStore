@@ -39,6 +39,8 @@ import { CheckoutPaymentComponent } from './checkout/checkout-payment/checkout-p
 import { CheckoutSuccessComponent } from './checkout/checkout-success/checkout-success.component';
 import { JwtInterceptor } from './errors/interceptors/jwt';
 import { BasketSummaryComponent } from './shared/basket-summary/basket-summary.component';
+import { OrdersComponent } from './orders/orders.component';
+import { OrderDetailedComponent } from './order-detailed/order-detailed.component';
 
 
 @NgModule({
@@ -66,6 +68,8 @@ import { BasketSummaryComponent } from './shared/basket-summary/basket-summary.c
     CheckoutPaymentComponent,
     CheckoutSuccessComponent,
     BasketSummaryComponent,
+    OrdersComponent,
+    OrderDetailedComponent,
   ],
   imports: [
     BrowserModule,
