@@ -1,0 +1,50 @@
+<div class="table-responsive" *ngIf="(basketService.basketSource$ | async) as basket">
+    <table class="table">
+        <thead class="text-uppercase" [class.bg-light]="isBasket">
+            <tr>
+                <th><div class="py-2">Product</div></th>
+                <th><div class="py-2">Price</div></th>
+                <th [class.text-center]="!isBasket"><div class="py-2">Quantity</div></th>
+                <th><div class="py-2">Total</div></th>
+                <th *ngIf="isBasket" ><div class="py-2">Remove</div></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of basket.baksetItems">
+                <th>
+                    <div class="p-2 d-inline-blok">
+                        <img class="img-fluid" src="{{item.pictureUrl}}" alt="{{item.productName}}" style="max-height: 50px;">
+                        <div class="ms-3 d-inline-block align-middle">
+                            <h5 class="mb-0">
+                                <a style="cursor: pointer;" routerLink="/shop/{{item.id}}" class="text-dark text-decoration-none">
+                                    {{item.productName}}
+                                </a>
+                            </h5>
+                            <span class="text-muted fst-italic">
+                                Type: {{item.type}}
+                            </span>
+                        </div>
+                    </div>
+                </th>
+                <td class="align-middle"><strong>{{item.price | currency}}</strong></td>
+                <td class="align-middle">
+                    <div class="d-flex align-items-center" [class.justify-content-center]="!isBasket"> 
+                        <fa-icon *ngIf="isBasket" [icon]="minus" class="text-warning me-2"
+                        (click)="removeBasketItem(item.id,1)"
+                        style="cursor: pointer; font-size: 1.5em;"></fa-icon>
+                        <span *ngIf="isBasket" class="font-wieght-bold" style="font-size: 1.5em;">{{item.quantity}}</span>
+                        <span *ngIf="!isBasket" class="font-wieght-bold" style="font-size: 1.2em;">{{item.quantity}}</span>
+                        <fa-icon *ngIf="isBasket"
+                         [icon]="plus" 
+                         (click)="addBasketItem(item)"
+                         class="text-warning mx-2 ms-2" style="cursor: pointer; font-size: 1.5em;"></fa-icon>
+                    </div>
+                </td>
+                <td class="align-middle"><strong>{{item.price * item.quantity | currency}}</strong></td>
+                <td *ngIf="isBasket"  class="align-middle" ><a class="text-danger">
+                    <fa-icon (click)="removeBasketItem(item.id, item.quantity)" [icon]="trash" style="font-size: 1.5em; cursor: pointer;"></fa-icon>
+                </a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

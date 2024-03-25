@@ -6,6 +6,7 @@ import { HttpClient } from '@angular/common/http';
 import { Product } from '../models/Product';
 import { BaksetItem } from '../models/BasketItem';
 import { BasketTotals } from '../models/BasketTotals';
+import { DeliveryMethod } from '../models/DeliveryMethod';
 
 @Injectable({
   providedIn: 'root'
@@ -16,8 +17,14 @@ export class BasketService {
   basketSource$ = this.basketSource.asObservable();
   private basketTotalSource  = new BehaviorSubject<BasketTotals | null>(null);
   basketTotalSource$ = this.basketTotalSource.asObservable();
-
+  shipping = 0;
   constructor(private http: HttpClient) { }
+
+
+  setShippingPrice(deliveryMethod: DeliveryMethod){
+    this.shipping = deliveryMethod.price;
+    this.calculateTotals();
+  }
 
   getBasket(id:string){
     return this.http.get<Basket>(this.baseUrl + 'Basket?id='+id).subscribe({
@@ -63,12 +70,17 @@ export class BasketService {
   deleteBasket(basket: Basket) {
     return this.http.delete(this.baseUrl + 'Basket?id='+basket.id).subscribe({
       next: () => {
-        this.basketSource.next(null);
-        this.basketTotalSource.next(null);
-        localStorage.removeItem('basket_id');
+       this.deleteLocalBasket();
       }
     });
   }
+
+  deleteLocalBasket(){
+    this.basketSource.next(null);
+    this.basketTotalSource.next(null);
+    localStorage.removeItem('basket_id');
+  }
+
   private addOrUpdateItem(baksetItems: BaksetItem[], itemToAdd : BaksetItem, quantity: number): BaksetItem[] {
     const item = baksetItems.find(i => i.id ===itemToAdd.id);
     if(item)
@@ -99,10 +111,9 @@ export class BasketService {
     const basket = this.getCurrentBasketValue();
     if(!basket) 
       return;
-    const shipping = 0;
     const subtotal = basket.baksetItems.reduce((a, b) => (b.price * b.quantity) + a, 0);
-    const total = subtotal + shipping;
-    this.basketTotalSource.next({shipping,total,subtotal});
+    const total = subtotal + this.shipping;
+    this.basketTotalSource.next({shipping: this.shipping,total,subtotal});
   }
   private isProductitem(item: Product | BaksetItem): item is Product {
     return (item as Product).productBrand !== undefined;

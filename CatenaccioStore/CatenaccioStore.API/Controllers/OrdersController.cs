@@ -38,7 +38,10 @@ namespace CatenaccioStore.API.Controllers
         [HttpGet("DeliveryMethod")]
         public async Task<ActionResult<IReadOnlyList<DeliveryMethod>>> GetDeliveryMethods(CancellationToken token)
         {
-            return Ok(await _orderService.GetDeliveryMethodsAsync(token));
+            var email = HttpContext.User.RetriveEmailFromPrincipal();
+            if(email != null)
+                return Ok(await _orderService.GetDeliveryMethodsAsync(token));
+            return Unauthorized("UnAuth");
         }
         [HttpPost]
         public async Task<ActionResult<Order>> CreateOrder(CancellationToken token, OrderDto orderDto)

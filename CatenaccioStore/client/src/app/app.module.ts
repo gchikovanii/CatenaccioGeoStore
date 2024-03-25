@@ -30,6 +30,15 @@ import { RegisterComponent } from './account/register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TextInputComponent } from './shared/text-input/text-input.component';
+import {CdkStepperModule} from '@angular/cdk/stepper';
+import { StepperComponent } from './shared/stepper/stepper.component';
+import { CheckoutAddressComponent } from './checkout/checkout-address/checkout-address.component';
+import { CheckoutDeliveryComponent } from './checkout/checkout-delivery/checkout-delivery.component';
+import { CheckoutReviewComponent } from './checkout/checkout-review/checkout-review.component';
+import { CheckoutPaymentComponent } from './checkout/checkout-payment/checkout-payment.component';
+import { CheckoutSuccessComponent } from './checkout/checkout-success/checkout-success.component';
+import { JwtInterceptor } from './errors/interceptors/jwt';
+import { BasketSummaryComponent } from './shared/basket-summary/basket-summary.component';
 
 
 @NgModule({
@@ -50,6 +59,13 @@ import { TextInputComponent } from './shared/text-input/text-input.component';
     LoginComponent,
     RegisterComponent,
     TextInputComponent,
+    StepperComponent,
+    CheckoutAddressComponent,
+    CheckoutDeliveryComponent,
+    CheckoutReviewComponent,
+    CheckoutPaymentComponent,
+    CheckoutSuccessComponent,
+    BasketSummaryComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,6 +76,7 @@ import { TextInputComponent } from './shared/text-input/text-input.component';
     MatSnackBarModule,
     NgxSpinnerModule,
     ReactiveFormsModule,
+    CdkStepperModule,
     BsDropdownModule.forRoot(),
     PaginationModule.forRoot(),
     TooltipModule.forRoot(),
@@ -74,7 +91,7 @@ import { TextInputComponent } from './shared/text-input/text-input.component';
     provideClientHydration(),
     {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true},
     {provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true},
-
+    {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
     provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]

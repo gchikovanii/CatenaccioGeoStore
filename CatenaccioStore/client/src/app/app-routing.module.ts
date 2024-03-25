@@ -10,12 +10,14 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { LoginComponent } from './account/login/login.component';
 import { RegisterComponent } from './account/register/register.component';
 import { authGuard } from './guards/auth.guard';
+import { CheckoutSuccessComponent } from './checkout/checkout-success/checkout-success.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent, data: {breadcrumb: 'Home'}},
   {path:'server-error', component: ServerErrorComponent},
   {path:'not-found', component: NotFoundComponent},
   {path:'login', component: LoginComponent},
+  {path:'success', component: CheckoutSuccessComponent},
   {path:'register', component: RegisterComponent},
   {path:'basket', component: BasketComponent},
   {

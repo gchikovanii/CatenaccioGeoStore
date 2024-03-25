@@ -4,6 +4,7 @@ import { BehaviorSubject, map } from 'rxjs';
 import { User } from '../models/User';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { Address } from '../models/Address';
 
 @Injectable({
   providedIn: 'root'
@@ -53,6 +54,11 @@ export class AccountService {
     return this.http.get<boolean>(this.baseUrl + 'Account/emailexists?email='+email);
   }
 
+  getUserAddress(){
+    return this.http.get<Address>(this.baseUrl + 'Account/address');
+  }
+  updateUserAaddress(address:Address){
+    return this.http.put<Address>(this.baseUrl + 'Account/address',address);
+  }
  
-
 }
