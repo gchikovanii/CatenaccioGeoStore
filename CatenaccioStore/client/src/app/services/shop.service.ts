@@ -6,12 +6,17 @@ import { environment } from '../../environments/environment';
 import { Brand } from '../models/Brand';
 import { Type } from '../models/Type';
 import { ShopParams } from '../models/ShopParams';
+import { map, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ShopService {
   baseUrl = environment.apiUrl;
+  products: Product[] = [];
+  brands: Brand[] = [];
+  types: Type[] = [];
+
   constructor(private http: HttpClient ) { }
 
   getProducts(shopParams: ShopParams){
@@ -27,15 +32,31 @@ export class ShopService {
     
     params = params.append('pageIndex', shopParams.pageNumber);
     params = params.append('pageSize', shopParams.pageSize);
-    return this.http.get<Pagination<Product>>(this.baseUrl + 'Products',{params});
+    return this.http.get<Pagination<Product>>(this.baseUrl + 'Products',{params}).pipe(
+      map(response => {
+        this.products = response.data;
+        return response;
+      })
+    )
   }
   getBrands(){
-    return this.http.get<Brand[]>(this.baseUrl + 'Products/brands');
+    if(this.brands.length > 0)
+      return of(this.brands);
+    return this.http.get<Brand[]>(this.baseUrl + 'Products/brands').pipe(
+      map(brands => this.brands = brands)
+    )
   }
   getTypes(){
-    return this.http.get<Type[]>(this.baseUrl + 'Products/types');
+    if(this.types.length > 0)
+      return of(this.types);
+    return this.http.get<Type[]>(this.baseUrl + 'Products/types').pipe(
+      map(types => this.types = types)
+    )
   }
   getProduct(id: number){
+    const product = this.products.find(i => i.id == id);
+    if(product)
+      return of(product);
     return this.http.get<Product>(this.baseUrl + 'Products/'+id);
   }
 }
