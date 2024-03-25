@@ -1,5 +1,6 @@
 ﻿using CatenaccioStore.API.DTOs;
 using CatenaccioStore.API.Errors;
+using CatenaccioStore.API.Infrastructure.Chaching;
 using CatenaccioStore.Core.Entities;
 using CatenaccioStore.Core.Repositories.Abstraction;
 using CatenaccioStore.Core.Repositories.Specifications;
@@ -23,7 +24,7 @@ namespace CatenaccioStore.API.Controllers
                 return NotFound(new ApiResponse(404));
             return Ok(result);
         }
-
+        [Cached(45)]
         [HttpGet]
         public async Task<ActionResult<List<Product>>> GetProducts(CancellationToken token, [FromQuery]ProductSpecParams productSpecParams)
         {
@@ -32,6 +33,7 @@ namespace CatenaccioStore.API.Controllers
                 return NotFound(new ApiResponse(404));
             return Ok(result);
         }
+        [Cached(45)]
 
         [HttpGet("brands")]
         public async Task<ActionResult<List<Product>>> GetProductBrandss(CancellationToken token)
@@ -41,6 +43,8 @@ namespace CatenaccioStore.API.Controllers
                 return NotFound(new ApiResponse(404));
             return Ok(result);
         }
+        [Cached(45)]
+
         [HttpGet("types")]
         public async Task<ActionResult<List<Product>>> GetProductTypes(CancellationToken token)
         {

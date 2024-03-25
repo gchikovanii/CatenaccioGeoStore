@@ -31,6 +31,7 @@ const routes: Routes = [
     ]
   },
   {path:'shop', component: ShopComponent},
+  {path: 'shop/:id', component: ProductDetailsComponent},
   {path:'orders', component: OrdersComponent},
   {path: 'orders/:id', component: OrderDetailedComponent},
   {path:'**', redirectTo: '', pathMatch: 'full'},

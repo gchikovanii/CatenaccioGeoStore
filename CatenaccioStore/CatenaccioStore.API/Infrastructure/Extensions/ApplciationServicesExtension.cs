@@ -28,6 +28,7 @@ namespace CatenaccioStore.API.Infrastructure.Extensions
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddSingleton<IResponseCacheService, ResponseCacheService>();
             services.AddAutoMapper(typeof(MappingProfiles)); 
             services.Configure<ApiBehaviorOptions>(opt =>
             {
