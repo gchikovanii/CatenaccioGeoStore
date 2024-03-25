@@ -27,7 +27,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { AccountComponent } from './account/account.component';
 import { LoginComponent } from './account/login/login.component';
 import { RegisterComponent } from './account/register/register.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TextInputComponent } from './shared/text-input/text-input.component';
 import {CdkStepperModule} from '@angular/cdk/stepper';
@@ -79,6 +79,7 @@ import { OrderDetailedComponent } from './order-detailed/order-detailed.componen
     HttpClientModule,
     MatSnackBarModule,
     NgxSpinnerModule,
+    FormsModule,
     ReactiveFormsModule,
     CdkStepperModule,
     BsDropdownModule.forRoot(),

@@ -3,7 +3,7 @@
         <section class="col-3">
             <h5 class="text-warning ms-3">Sort</h5>
             <select class="form-select mb-4" (change)="onSortSelected($event)">
-                <option *ngFor="let sort of sortOptions" [value]="sort.value">{{sort.name}}</option>
+                <option *ngFor="let sort of sortOptions" [selected]="shopParams.sort === sort.value" [value]="sort.value">{{sort.name}}</option>
             </select>
                   <h5 class="text-warning ms-3">Types</h5>
                     <ul class="list-group my-3">
@@ -38,8 +38,8 @@
                 </div>
             </div>
             <div *ngIf="totalCount > 0" class="d-flex justify-content-center mt-3">
-                <pagination [boundaryLinks]="true" [totalItems]="totalCount" [itemsPerPage]="shopParams.pageSize" [maxSize]="10"
-                   (pageChanged)="onPageChanged($event)"  previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;">
+                <pagination [boundaryLinks]="true"  [totalItems]="totalCount" [itemsPerPage]="shopParams.pageSize" [maxSize]="10"
+                 [ngModel] ="shopParams.pageNumber"  (pageChanged)="onPageChanged($event)"  previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;">
                 </pagination>
             </div>
         </section>
