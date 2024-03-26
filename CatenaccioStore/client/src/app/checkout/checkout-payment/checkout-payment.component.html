@@ -1,3 +1,34 @@
+<div class="mt-4" *ngIf="checkoutForm" [formGroup]="checkoutForm">
+    <div class="row">
+        <div class="form-group col-12" formGroupName="paymentForm">
+            <app-text-input [label]="'Name on card'" formControlName="nameOnCard"></app-text-input>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-6">
+            <div class="form-floating">
+                <div class="form-control" #cardNumber>
+                    <label>Card Number</label>
+                    <span class="text-danger">{{cardErrors}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="form-floating">
+                <div class="form-control" #cardExpiry>
+                    <label>Expiry Date</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="form-floating">
+                <div class="form-control" #cardCvc>
+                    <label>CVC</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="d-flex justify-content-between flex-row mb-5">
     <button class="btn btn-outline-primary" cdkStepperPrevious>
         <fa-icon [icon]="leftAngle" ></fa-icon> Back to Review

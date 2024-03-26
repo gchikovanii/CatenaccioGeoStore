@@ -19,7 +19,6 @@ export class CheckoutService {
 
 
   getDeliveryMethods(){
-    debugger;
     return this.http.get<DeliveryMethod[]>(this.baseUrl + 'Orders/DeliveryMethod').pipe(
       map(dm => {
         return dm.sort((a,b) => b.price - a.price);
