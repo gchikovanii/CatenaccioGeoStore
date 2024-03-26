@@ -18,8 +18,7 @@ export class CheckoutReviewComponent {
 
   createPaymentIntent(){
     this.basketService.createPaymentIntent().subscribe({
-      next: () => {this.snackBar.open('Payment intent success');
-    this.appStepper?.next()},
+      next: () => {this.appStepper?.next()},
       error: error => this.snackBar.open(error.message),
     })
   }

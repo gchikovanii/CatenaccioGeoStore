@@ -33,7 +33,8 @@
     <button class="btn btn-outline-primary" cdkStepperPrevious>
         <fa-icon [icon]="leftAngle" ></fa-icon> Back to Review
     </button>
-    <button class="btn btn-primary" (click)="submitOrder()">
+    <button [disabled]="loading || !paymentFormComplete" class="btn btn-primary" (click)="submitOrder()">
         Submit Order <fa-icon [icon]="rightAngle"></fa-icon> 
+        <fa-icon *ngIf="loading" [icon]="spinner" class="spin"></fa-icon>
     </button>
 </div>

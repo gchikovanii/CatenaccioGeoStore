@@ -1,8 +1,10 @@
 ﻿using CatenaccioStore.Core.Entities;
 using CatenaccioStore.Core.Entities.Orders;
 using CatenaccioStore.Core.Repositories.Abstraction;
+using CatenaccioStore.Core.Repositories.Specifications;
 using Microsoft.Extensions.Configuration;
 using Stripe;
+using Stripe.Issuing;
 
 namespace CatenaccioStore.Infrastructure.Services
 {
@@ -23,6 +25,8 @@ namespace CatenaccioStore.Infrastructure.Services
         {
             StripeConfiguration.ApiKey = _config["StripeSettings:SecretKey"];
             var basket = await _basketRepository.GetBasketAsync(basketId);
+            if (basket == null)
+                return null;
             var shippingPrice = 0m;
             if (basket.DeliveryMethodId.HasValue)
             {
@@ -62,6 +66,28 @@ namespace CatenaccioStore.Infrastructure.Services
             }
             await _basketRepository.UpdateBasketAsync(basket);
             return basket;
+        }
+
+        public async Task<Order> UpdateOrderPaymentFailed(CancellationToken token,string paymentIntentId)
+        {
+            var spec = new OrderByPaymentIntentIdSpecification(paymentIntentId);
+            var order = await _unitOfWork.Repository<Order>().GetEntityWithSpec(token,spec);
+            if (order == null)
+                return null;
+            order.OrderStatus = OrderStatus.PaymentFailed;
+            await _unitOfWork.Complete();
+            return order;
+        }
+
+        public async Task<Order> UpdateOrderPaymentSucceeded(CancellationToken token, string paymentIntentId)
+        {
+            var spec = new OrderByPaymentIntentIdSpecification(paymentIntentId);
+            var order = await _unitOfWork.Repository<Order>().GetEntityWithSpec(token, spec);
+            if (order == null)
+                return null;
+            order.OrderStatus = OrderStatus.PaymentRecevied;
+            await _unitOfWork.Complete();
+            return order;
         }
     }
 }

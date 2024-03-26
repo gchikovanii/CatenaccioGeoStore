@@ -28,12 +28,27 @@ namespace CatenaccioStore.Infrastructure.Repositories.Implementation
 
             var deliveryMethod = await _unitOfWork.Repository<DeliveryMethod>().GetByIdAsync(token, deliveryMethodId);
             var subTotal = items.Sum(i => i.Price * i.Quantity);
-            var order = new Order(items,buyerEmail,shippingAdderss, deliveryMethod,subTotal);
-            _unitOfWork.Repository<Order>().Add(order);
+
+            var spec = new OrderByPaymentIntentIdSpecification(basket.PaymentIntentId);
+            var order = await _unitOfWork.Repository<Order>().GetEntityWithSpec(token, spec);
+
+            if(order != null)
+            {
+                order.ShipToAddress = shippingAdderss;
+                order.DeliveryMethod = deliveryMethod;
+                order.Subtotal = subTotal;
+                _unitOfWork.Repository<Order>().Update(order);
+            }
+            else
+            {
+                order = new Order(items, buyerEmail, basket.PaymentIntentId, shippingAdderss, deliveryMethod, subTotal);
+                _unitOfWork.Repository<Order>().Add(order);
+            }
+            
             var result = await _unitOfWork.Complete();
             if (result <= 0)
                 return null;
-            await _basketRepository.DeleteBasketAsync(basketId);
+           
             return order;
         }
 
