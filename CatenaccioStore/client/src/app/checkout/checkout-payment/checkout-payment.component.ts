@@ -8,6 +8,7 @@ import { Basket } from '../../models/Basket';
 import { Address } from '../../models/Address';
 import { NavigationExtras, Router } from '@angular/router';
 import { Stripe, StripeCardCvcElement, StripeCardExpiryElement, StripeCardNumberElement, loadStripe } from '@stripe/stripe-js';
+import { __values } from 'tslib';
 
 @Component({
   selector: 'app-checkout-payment',
@@ -22,7 +23,7 @@ export class CheckoutPaymentComponent implements OnInit, AfterViewInit{
   @ViewChild('cardExpiry') cardExpiryElement?: ElementRef;
   @ViewChild('cardCvc') cardCvcElement?: ElementRef;
   stripe: Stripe | null = null;
-  cardNumer?: StripeCardNumberElement;
+  cardNumber?: StripeCardNumberElement;
   cardExpiry?: StripeCardExpiryElement;
   cardCvc?: StripeCardCvcElement;
   cardErrors: any;
@@ -33,15 +34,15 @@ export class CheckoutPaymentComponent implements OnInit, AfterViewInit{
       console.log('Stripe loaded:', stripe);
       const elements = stripe?.elements();
       if (elements) {
-        this.cardNumer = elements.create('cardNumber');
+        this.cardNumber = elements.create('cardNumber');
         this.cardExpiry = elements.create('cardExpiry');
         this.cardCvc = elements.create('cardCvc');
   
-        this.cardNumer.mount(this.cardNumberElement?.nativeElement);
+        this.cardNumber.mount(this.cardNumberElement?.nativeElement);
         this.cardExpiry.mount(this.cardExpiryElement?.nativeElement);
         this.cardCvc.mount(this.cardCvcElement?.nativeElement);
 
-        this.cardNumer.on('change',event => {
+        this.cardNumber.on('change',event => {
           if(event.error)
             this.cardErrors = event.error.message;
           else
@@ -76,10 +77,22 @@ export class CheckoutPaymentComponent implements OnInit, AfterViewInit{
       return;
     this.checkoutService.createOrder(orderToCreate).subscribe({
       next: order => {
-        this.snackBar.open('Order created successfully')
-        this.basketService.deleteLocalBasket();
-        const navigationExtras: NavigationExtras = {state: order};
-        this.router.navigate(['success'],navigationExtras);
+        this.snackBar.open('Order created successfully');
+        this.stripe?.confirmCardPayment(basket.clientSecret!,{
+          payment_method: {
+            card: this.cardNumber!,
+            billing_details:{
+              name: this.checkoutForm?.get('paymentForm')?.get('nameOnCard')?.value
+            }
+          }
+        }).then(result => {
+          if(result.paymentIntent){
+            this.basketService.deleteLocalBasket();
+            const navigationExtras: NavigationExtras = {state: order};
+            this.router.navigate(['success'],navigationExtras);
+          }
+        })
+       
       }
     })
   }
