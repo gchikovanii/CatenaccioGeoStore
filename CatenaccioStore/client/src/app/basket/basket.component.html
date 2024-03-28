@@ -1,6 +1,7 @@
 <div class="container">
-    <div *ngIf="(basketService.basketSource$ | async) === null">
-        <p>There are no items in your basket</p>
+    <div class="d-flex justify-content-center" *ngIf="(basketService.basketSource$ | async) === null">
+        <img src="../../assets/images/not-found.png" class="d-none d-md-block" style="max-width: 800px; max-height: 700px;" alt="not-found">
+        <img src="../../assets/images/not-found.png" class="d-block d-md-none" style="max-width: 400px; max-height: 300px;" alt="not-found">
     </div>
     <ng-container *ngIf="(basketService.basketSource$ | async) as basket">
         <div class="container">
