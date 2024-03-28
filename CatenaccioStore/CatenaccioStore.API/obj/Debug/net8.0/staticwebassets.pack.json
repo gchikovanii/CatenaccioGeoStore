@@ -1,6 +1,86 @@
 {
   "Files": [
     {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\guram_kashia.png",
+      "PackagePath": "staticwebassets\\images\\prods\\Bags\\guram_kashia.png"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\khvicha_cshh_cisferi.png",
+      "PackagePath": "staticwebassets\\images\\prods\\Bags\\khvicha_cshh_cisferi.png"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\khvicha_cshh_lurji.png",
+      "PackagePath": "staticwebassets\\images\\prods\\Bags\\khvicha_cshh_lurji.png"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\khvicha_cshh_shavi.png",
+      "PackagePath": "staticwebassets\\images\\prods\\Bags\\khvicha_cshh_shavi.png"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\khvicha_kiss_cisferi.png",
+      "PackagePath": "staticwebassets\\images\\prods\\Bags\\khvicha_kiss_cisferi.png"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\khvicha_kiss_lurji.png",
+      "PackagePath": "staticwebassets\\images\\prods\\Bags\\khvicha_kiss_lurji.png"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\mamarda_mwvane.png",
+      "PackagePath": "staticwebassets\\images\\prods\\Bags\\mamarda_mwvane.png"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\zuriko_messi.png",
+      "PackagePath": "staticwebassets\\images\\prods\\Bags\\zuriko_messi.png"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\arsenal.png",
+      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\arsenal.png"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\barcelona.png",
+      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\barcelona.png"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\bayern.png",
+      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\bayern.png"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\chelsea.png",
+      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\chelsea.png"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\inter.png",
+      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\inter.png"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\juve.png",
+      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\juve.png"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\khvicha.png",
+      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\khvicha.png"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\liverpool.png",
+      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\liverpool.png"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\manutd.png",
+      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\manutd.png"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\milan.png",
+      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\milan.png"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\psg.png",
+      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\psg.png"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\real.png",
+      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\real.png"
+    },
+    {
       "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\boot-ang1.png",
       "PackagePath": "staticwebassets\\images\\products\\boot-ang1.png"
     },

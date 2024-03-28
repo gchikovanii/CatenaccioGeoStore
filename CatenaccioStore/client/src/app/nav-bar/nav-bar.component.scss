@@ -1,9 +1,9 @@
 .cart-no{
     position: absolute;
-    min-height: 25px;
-    min-width: 25px;
+    min-height: 22px;
+    min-width: 22px;
     border-radius: 50%;
-    background: blue;
+    background: #0466c8;
     color: white;
     text-align: center;
     top: -12px;
@@ -12,14 +12,25 @@
 
 a{
     text-decoration: none;
-    color: #343a40;
+    color: #c6c6c6;
 
     &.active{
-        color: orange;
+        color: #f0f8ff ;
     }
 
+}
+.aovv{
+    color: #0466c8!important;
+}
+.dropdown-toggle::after {
+    display: none;
 }
 
 .logo{
     cursor: pointer;
 }
+
+
+@media (max-width: 768px) {
+    
+  }
