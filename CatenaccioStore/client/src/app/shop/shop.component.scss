@@ -6,11 +6,33 @@
 
     &.active{
         border-radius: 10px;
+        background-color: #0466c8;
     }
 
     &:not(.active):hover{
         color: #fff;
-        background-color: #2fa4e7;
+        background-color: #0466c8;
         border-radius: 10px;
     }
 }
+
+.custom-outline-primary {
+    color: #0466c8; /* Text color */
+    border-color: #0466c8; /* Border color */
+}
+
+.custom-outline-primary:hover {
+    background-color: #0466c8; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+.custom-outline-secondary {
+    color: #1c2331; /* Text color */
+    border-color: #1c2331; /* Border color */
+}
+
+.custom-outline-secondary:hover {
+    background-color: #1c2331; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+

@@ -2,18 +2,18 @@
   <div class="image position-relative" style="cursor: pointer;">
     <img class="img-fluid bg-info" src="{{product.pictureUrl}}" alt="{{product.name}}">
     <div class="d-flex align-items-center justify-content-center hover-overlay">
-      <button (click)="addItemToBasket()" class="btn btn-primary me-2"><fa-icon [icon]="cart"></fa-icon></button>
-      <button routerLink="/shop/{{product.id}}" class="btn btn-primary">View</button>
+      <button (click)="addItemToBasket()" class="btn custom-btn-primary me-2"><fa-icon [icon]="cart"></fa-icon></button>
+      <button routerLink="/shop/{{product.id}}" class="btn custom-btn-primary">View</button>
     </div>
   </div>
   
     <div class="card-body d-flex flex-column">
       <a href="" class="text-decoration-none">
-        <h4 class="text-uppercase">
+        <h4 style="color: #0466c8;" class="text-uppercase">
           {{product.name}}
         </h4>
       </a>
       <span class="mb-2">{{product.price | currency}}</span>
-      <small class="text-muted mt-2">Quantity: {{product.quantity}}</small>
+      <small style="color:#023291;" class="mt-2 fw-bold" >Quantity: {{product.quantity}}</small>
     </div>
 </div>

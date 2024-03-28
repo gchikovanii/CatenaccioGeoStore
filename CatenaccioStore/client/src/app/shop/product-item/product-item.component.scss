@@ -33,3 +33,18 @@
         transform: translateX(20px);
      }
 }
+
+
+
+
+.custom-btn-primary {
+    background-color: #0466c8; /* Background color */
+    border-color: #0466c8; /* Border color */
+    color: #fff; /* Text color */
+}
+
+.custom-btn-primary:hover {
+    background-color: #0466c8; /* Background color on hover */
+    border-color: #0466c8; /* Border color on hover */
+    color: #fff; /* Text color on hover */
+}
