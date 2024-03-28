@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faBars, faHistory, faShoppingCart, faSignOut, faUser, faUserCircle, faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faHistory, faShoppingCart, faSignOut, faSliders, faUser, faUserCircle, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 import { BasketService } from '../services/basket.service';
 import { BaksetItem } from '../models/BasketItem';
 import { AccountService } from '../services/account.service';
@@ -19,6 +19,7 @@ export class NavBarComponent{
   loginUser = faUser;
   registerUser = faUserPlus;
   burger = faBars;
+  settings = faSliders;
 
   getCount(items: BaksetItem[]){
     return items.reduce((sum,item) => sum + item.quantity,0);

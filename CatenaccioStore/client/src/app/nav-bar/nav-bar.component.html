@@ -60,7 +60,7 @@
     <ng-container *ngIf="(accountService.currentUserSource$ | async) as user">
       <div class="dropdown ms-3 me-5" style="cursor: pointer;" dropdown>
         <a dropdownToggle class="dropdown-toggle aovv">
-          <strong>Welcome, {{user.displayName}}</strong>
+          <strong>{{user.displayName}}'s settings <fa-icon [icon]="settings" class="me-3"></fa-icon></strong>
         </a>
         <ul *dropdownMenu class="dropdown-menu dropdown-menu-right">
           <li class="py-1">
