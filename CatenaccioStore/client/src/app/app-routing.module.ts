@@ -13,6 +13,7 @@ import { authGuard } from './guards/auth.guard';
 import { CheckoutSuccessComponent } from './checkout/checkout-success/checkout-success.component';
 import { OrdersComponent } from './orders/orders.component';
 import { OrderDetailedComponent } from './order-detailed/order-detailed.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -30,6 +31,7 @@ const routes: Routes = [
       {path:'checkout', component: CheckoutComponent}
     ]
   },
+  {path:'contact', component: ContactComponent},
   {path:'shop', component: ShopComponent},
   {path: 'shop/:id', component: ProductDetailsComponent},
   {path:'orders', component: OrdersComponent},

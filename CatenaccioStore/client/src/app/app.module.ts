@@ -42,6 +42,7 @@ import { BasketSummaryComponent } from './shared/basket-summary/basket-summary.c
 import { OrdersComponent } from './orders/orders.component';
 import { OrderDetailedComponent } from './order-detailed/order-detailed.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -72,6 +73,7 @@ import { FooterComponent } from './footer/footer.component';
     OrdersComponent,
     OrderDetailedComponent,
     FooterComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
