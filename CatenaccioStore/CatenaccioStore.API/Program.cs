@@ -1,5 +1,6 @@
 using CatenaccioStore.API.Infrastructure.Extensions;
 using CatenaccioStore.API.Infrastructure.Middleware;
+using CatenaccioStore.API.Infrastructure.Models;
 using CatenaccioStore.Core.Entities.Identities;
 using CatenaccioStore.Infrastructure.DaataSeeding;
 using CatenaccioStore.Infrastructure.DataContext;
@@ -11,6 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddServices(builder.Configuration);
 builder.Services.AddIdentityServices(builder.Configuration);
+builder.Services.Configure<GoogleAppSettings>(builder.Configuration.GetSection("GoogleAppSettings"));
 builder.Services.AddSwaggerDocumentation();
 
 var app = builder.Build();
