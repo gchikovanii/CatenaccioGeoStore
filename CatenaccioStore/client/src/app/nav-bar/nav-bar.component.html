@@ -1,7 +1,6 @@
 <nav style="background-color: #1c2331;" class="d-flex flex-row align-items-center justify-content-between px-4 mb-3 border-bottom fixed-top shadow-sm">
   <div class="d-flex align-items-center flex-grow-1">
     <img src="../../assets/images/logo.png" class="logo" alt="logo" style="max-height: 70px;">
-
     <nav class="mx-3 my-3 text-uppercase fs-5 d-flex d-md-none dropdown">
       <div style="margin-left: 150px!important;" class="dropdown ms-3 me-5" style="text-decoration: none;" dropdown>
         <a style="cursor: pointer;" dropdownToggle class="dropdown-toggle">
@@ -9,10 +8,10 @@
         </a>
         <ul *dropdownMenu class="dropdown-menu dropdown-menu-right">
           <li class="py-1">
-            <a class="dropdown-item" routerLink="/shop">Shop</a>
+            <a class="dropdown-item" routerLink="/shop">{{'shop' | translate}}</a>
           </li>
           <li class="py-1">
-            <a class="dropdown-item" routerLink="/contact">Contact</a>
+            <a class="dropdown-item" routerLink="/contact">Contact/</a>
           </li>
           <li class="py-1">
             <a class="dropdown-item" routerLink="/">About Us</a>
@@ -22,9 +21,9 @@
     </nav>
 
     <nav class="mx-3 my-3 text-uppercase fs-5 d-none d-md-flex">
-      <a class="mx-3" routerLink="/shop" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Shop</a>
-      <a class="mx-3" routerLink="/contact" routerLinkActive="active">Contact</a>
-      <a class="mx-3" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">About Us</a>
+      <a class="mx-3" routerLink="/shop" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{'shop' | translate}}</a>
+      <a class="mx-3" routerLink="/contact" routerLinkActive="active">{{'contact' | translate}}</a>
+      <a class="mx-3" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{'aboutUs' | translate}}</a>
     </nav>
   </div>
   <div class="d-flex align-items-center">
@@ -35,8 +34,11 @@
       </div>
     </a>
 
+
+
+
     <ng-container *ngIf="(accountService.currentUserSource$ | async) === null">
-      <div class="dropdown ms-3 me-5" style="text-decoration: none;" dropdown>
+      <div class="dropdown ms-3 me-2" style="text-decoration: none;" dropdown>
         <a style="cursor: pointer;" dropdownToggle class="dropdown-toggle">
           <fa-icon [icon]="account" class="me-3 fa-2x"></fa-icon>
         </a>
@@ -55,8 +57,9 @@
           </li>
         </ul>
       </div>
+      <app-lang></app-lang>
     </ng-container>
-
+    
     <ng-container *ngIf="(accountService.currentUserSource$ | async) as user">
       <div class="dropdown ms-3 me-5" style="cursor: pointer;" dropdown>
         <a dropdownToggle class="dropdown-toggle aovv">
@@ -84,5 +87,6 @@
         </ul>
       </div>
     </ng-container>
+    <!-- <app-lang></app-lang> -->
   </div>
 </nav>

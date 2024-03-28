@@ -1,15 +1,15 @@
 <div class="container">
     <div *ngIf="types.length > 0 && brands.length > 0" class="row">
         <section class="col-lg-3 col-md-4">
-            <h5 style="color:#023291;" class="fw-bold ms-3">Sort</h5>
+            <h5 style="color:#023291;" class="fw-bold ms-3">{{'sort' | translate}}</h5>
             <select class="form-select mb-4" (change)="onSortSelected($event)">
                 <option *ngFor="let sort of sortOptions" [selected]="shopParams.sort === sort.value" [value]="sort.value">{{sort.name}}</option>
             </select>
-            <h5 style="color:#023291;"  class="fw-bold ms-3">Types</h5>
+            <h5 style="color:#023291;"  class="fw-bold ms-3">{{'types' | translate}}</h5>
             <ul  class="list-group my-3">
                 <li class="list-group-item" *ngFor="let type of types" [class.active]="type.id === shopParams.typeId" [value]="type.id" (click)="onTypeSelected(type.id)">{{type.name}}</li>
             </ul>
-            <h5 style="color:#023291;"  class="fw-bold ms-3">Brands</h5>
+            <h5 style="color:#023291;"  class="fw-bold ms-3">{{'brand' | translate}}</h5>
             <ul class="list-group my-3">
                 <li *ngFor="let brand of brands" class="list-group-item" [class.active]="brand.id === shopParams.brandId" [value]="brand.id" (click)="onBrandSelected(brand.id)">{{brand.name}}</li>
             </ul>
@@ -19,8 +19,8 @@
                 <app-paging-header [totalCount]="totalCount" [pageNumber]="shopParams.pageNumber" [pageSize]="shopParams.pageSize"></app-paging-header>
                 <div class="d-flex mt-2">
                     <input (keyup.enter)="onSearch()" type="text" placeholder="Search..." class="form-control me-2" #search>
-                    <button (click)="onSearch()" class="btn btn-outline custom-outline-primary mx-1">Search</button>
-                    <button (click)="onReset()" class="btn btn-outline custom-outline-secondary mx-1">Reset</button>
+                    <button (click)="onSearch()" class="btn btn-outline custom-outline-primary mx-1">{{'search' | translate}}</button>
+                    <button (click)="onReset()" class="btn btn-outline custom-outline-secondary mx-1">{{'reset' | translate}}</button>
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mt-1">

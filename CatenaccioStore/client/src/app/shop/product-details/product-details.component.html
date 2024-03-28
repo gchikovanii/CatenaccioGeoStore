@@ -7,14 +7,14 @@
             <h2 style="color: #0466c8;">{{product.name}}</h2>
             <p style="font-size: 2em;">{{product.price | currency}}</p>
             <ng-container *ngIf="product.quantity <= 10"> 
-                <h4 class="text-danger">In stock: {{product.quantity}} pices left</h4>
+                <h4 class="text-danger">{{'inStock' | translate}} {{product.quantity}} {{'pleft' | translate}}</h4>
             </ng-container>
             <ng-container *ngIf="product.quantity > 10"> 
-                <h4 style="color: #023291;">In stock: {{product.quantity}} pices</h4>
+                <h4 style="color: #023291;">{{'inStock' | translate}} {{product.quantity}}  {{'pcs' | translate}}</h4>
             </ng-container>
 
             <h5 style="color: #0466c8;" class="mb-3" *ngIf="quantityInBasket > 0">
-                You have {{quantityInBasket}} of this item in your basket
+                {{'youh' | translate}} {{quantityInBasket}} {{'oftiiyb' | translate}}
             </h5>
 
 
@@ -29,7 +29,7 @@
                 <button (click)="updateBasket()" [disabled]="quantity === quantityInBasket || quantity == 0" class="btn btn-outline custom-outline-primary ms-4">{{buttonText}}</button>
             </div>
             <div class="row mt-4">
-                <h4 style="color: #0466c8;">Description</h4>
+                <h4 style="color: #0466c8;">{{'description' | translate}}</h4>
                 <p>{{product.description}}</p>
             </div>
         </div>  

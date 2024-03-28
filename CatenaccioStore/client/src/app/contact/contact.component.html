@@ -4,8 +4,8 @@
         <div class="col-12 col-lg-6">
           <div class="row justify-content-xl-center">
             <div class="col-12 col-xl-11">
-              <h2 class="h1 mb-3">Get in touch</h2>
-              <p class="lead fs-4 mb-5" style="color: #fff;">Have any questions? Fell free to contact us!</p>
+              <h2 class="h1 mb-3">{{'getIn' | translate}}</h2>
+              <p class="lead fs-4 mb-5" style="color: #fff;">{{'anyQ' | translate}}</p>
               <div class="d-flex mb-5">
                 <div class="me-4 text-primary">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-geo" viewBox="0 0 16 16">
@@ -13,8 +13,8 @@
                   </svg>
                 </div>
                 <div>
-                  <h4 class="mb-3">Address</h4>
-                  <address style="color: #fff;" class="mb-0">0163 Smagoris Raioni, Varketili, Tbilisi, Georgia</address>
+                  <h4 class="mb-3">{{'address' | translate}}</h4>
+                  <address style="color: #fff;" class="mb-0">{{'caa' | translate}}</address>
                 </div>
               </div>
               <div class="row mb-5">
@@ -26,7 +26,7 @@
                       </svg>
                     </div>
                     <div>
-                      <h4 class="mb-3">Phone</h4>
+                      <h4 class="mb-3">{{'phone' | translate}}</h4>
                       <p class="mb-0">
                         <a style="color: #fff;"  class="text-decoration-none" href="tel:+995574836259">+995 574 83 62 59 </a>
                       </p>
@@ -42,7 +42,7 @@
                       </svg>
                     </div>
                     <div>
-                      <h4 class="mb-3">Email</h4>
+                      <h4 class="mb-3">{{'email' | translate}}</h4>
                       <p class="mb-0">
                         <a style="color: #fff;"  class="text-decoration-none" href="mailto:catenaccio.geo@gmail.com">catenaccio.geo&#64;gmail.com</a>
                       </p>
@@ -58,14 +58,14 @@
                   </svg>
                 </div>
                 <div>
-                  <h4 class="mb-3">Opening Hours</h4>
+                  <h4 class="mb-3">{{'opn' | translate}}</h4>
                   <div class="d-flex mb-1">
-                    <p style="color: #fff;" class="fw-bold mb-0 me-5">Mon - Fri</p>
-                    <p style="color: #fff;"  class="mb-0">10am - 7pm</p>
+                    <p style="color: #fff;" class="fw-bold mb-0 me-5">{{'mf' | translate}}</p>
+                    <p style="color: #fff;"  class="mb-0">{{'apm' | translate}}</p>
                   </div>
                   <div class="d-flex">
-                    <p style="color: #fff;"  class="fw-bold mb-0 me-5">Sat - Sun</p>
-                    <p style="color: #fff;"  class="mb-0">Not working</p>
+                    <p style="color: #fff;"  class="fw-bold mb-0 me-5">{{'ss' | translate}}</p>
+                    <p style="color: #fff;"  class="mb-0">{{'nw' | translate}}</p>
                   </div>
                 </div>
               </div>
@@ -78,11 +78,11 @@
             <form id="contact-form" (ngSubmit)="submitForm()" method="POST">
               <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
                 <div class="col-12">
-                  <label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
+                  <label for="fullname" class="form-label">{{'fName' | translate}} <span class="text-danger">*</span></label>
                   <input type="text" class="form-control" id="fullname" name="fullname" [(ngModel)]="formData.name" required>
                 </div>
                 <div class="col-12 col-md-6">
-                  <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                  <label for="email" class="form-label">{{'email' | translate}} <span class="text-danger">*</span></label>
                   <div class="input-group">
                     <span class="input-group-text">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
@@ -93,7 +93,7 @@
                   </div>
                 </div>
                 <div class="col-12 col-md-6">
-                  <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                  <label for="phone" class="form-label">{{'phn' | translate}} <span class="text-danger">*</span></label>
                   <div class="input-group">
                     <span class="input-group-text">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
@@ -104,16 +104,16 @@
                   </div>
                 </div>
                 <div class="col-12">
-                  <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
+                  <label for="subject" class="form-label">{{'sbj' | translate}} <span class="text-danger">*</span></label>
                   <input type="text" class="form-control" id="subject" name="subject" [(ngModel)]="formData.subject" required>
                 </div>
                 <div class="col-12">
-                  <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                  <label for="message" class="form-label">{{'message' | translate}} <span class="text-danger">*</span></label>
                   <textarea class="form-control" id="message" name="message" rows="3" [(ngModel)]="formData.message" required></textarea>
                 </div>
                 <div class="col-12">
                   <div class="d-grid">
-                    <button class="btn btn-outline-primary btn-lg" type="submit">Send Message</button>
+                    <button class="btn btn-outline-primary btn-lg" type="submit">{{'sMe' | translate}}</button>
                   </div>
                 </div>
               </div>

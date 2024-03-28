@@ -4,7 +4,7 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ShopComponent } from './shop/shop.component';
 import { ProductItemComponent } from './shop/product-item/product-item.component';
@@ -46,8 +46,13 @@ import { ContactComponent } from './contact/contact.component';
 import { ConfirmComponent } from './confirm/confirm.component';
 import { RecoveryComponent } from './recovery/recovery.component';
 import { ForgotComponent } from './forgot/forgot.component';
+import { LangComponent } from './lang/lang.component';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
-
+export function HttpLoaderFactory(http : HttpClient){
+  return new TranslateHttpLoader(http);
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -80,6 +85,7 @@ import { ForgotComponent } from './forgot/forgot.component';
     ConfirmComponent,
     RecoveryComponent,
     ForgotComponent,
+    LangComponent,
   ],
   imports: [
     BrowserModule,
@@ -95,11 +101,21 @@ import { ForgotComponent } from './forgot/forgot.component';
     BsDropdownModule.forRoot(),
     PaginationModule.forRoot(),
     TooltipModule.forRoot(),
+    TranslateModule.forRoot(
+      {
+       loader:{
+         provide: TranslateLoader,
+         useFactory: HttpLoaderFactory,
+         deps:[HttpClient]
+       }
+      }
+     ),
     ToastrModule.forRoot(
       {
         positionClass: 'toast-bottom-right'
       }
-    )
+    ),
+    
     
   ],
   providers: [

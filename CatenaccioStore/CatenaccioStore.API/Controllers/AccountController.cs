@@ -292,7 +292,7 @@ a[x-apple-data-detectors] {
                   <td class=""es-m-p0r"" valign=""top"" align=""center"" style=""padding:0;Margin:0;width:600px"">
                    <table cellpadding=""0"" cellspacing=""0"" width=""100%"" role=""presentation"" style=""mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"">
                      <tr>
-                      <td align=""center"" class=""es-m-txt-c"" style=""padding:0;Margin:0;font-size:0px""><a target=""_blank"" href=""https://viewstripo.email"" style=""-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:14px""><img src=""https://drive.google.com/file/d/1YniLN6gExbPCIJpPN_OWaQegnoosn1uC/view"" alt=""Logo"" style=""display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"" title=""Logo"" height=""115""></a></td>
+                      <td align=""center"" class=""es-m-txt-c"" style=""padding:0;Margin:0;font-size:0px""><a target=""_blank"" href=""https://viewstripo.email"" style=""-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#E2CFEA;font-size:14px""><img src=""https://ibb.co/yPJPVvd"" alt=""Logo"" style=""display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"" title=""Logo"" height=""115""></a></td>
                      </tr>
                    </table></td>
                  </tr>
@@ -603,7 +603,7 @@ a[x-apple-data-detectors] {
                   <td class=""es-m-p20b"" align=""left"" style=""padding:0;Margin:0;width:270px"">
                    <table width=""100%"" cellspacing=""0"" cellpadding=""0"" role=""presentation"" style=""mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"">
                      <tr style=""border-collapse:collapse"">
-                      <td class=""es-m-p0l es-m-txt-c"" align=""left"" style=""padding:0;Margin:0;font-size:0px""><a href=""https://viewstripo.email"" target=""_blank"" style=""-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:none;color:#1376C8;font-size:14px""><img src=""https://drive.google.com/file/d/1YniLN6gExbPCIJpPN_OWaQegnoosn1uC/view"" alt style=""display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"" width=""183""></a></td>
+                      <td class=""es-m-p0l es-m-txt-c"" align=""left"" style=""padding:0;Margin:0;font-size:0px""><a href=""https://viewstripo.email"" target=""_blank"" style=""-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:none;color:#1376C8;font-size:14px""><img src=""https://ibb.co/yPJPVvd"" alt style=""display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"" width=""183""></a></td>
                      </tr>
                    </table></td>
                  </tr>
