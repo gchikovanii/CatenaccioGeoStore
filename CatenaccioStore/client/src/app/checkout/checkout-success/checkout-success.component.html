@@ -1,8 +1,10 @@
 <div class="container mt-5">
-    <div>
-        <fa-icon [icon]="checkCircle" style="color: green;" class="fa-5x"></fa-icon>
-        <h2>Thank you. Your order is confirmed</h2>
-        <p class="mb-4">Your order has been processing you suckeeeeerrr</p>
-        <button class="btn btn-outline-success">View Your order</button>
+    <div class="row">
+        <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center">
+            <fa-icon [icon]="checkCircle" style="color: green;" class="fa-5x"></fa-icon>
+            <h2 class="mt-3">Thank you. Your order is confirmed</h2>
+            <p class="mb-4">Your order has been processed, you can see further details on the orders page!</p>
+            <button class="btn btn-outline custom-outline-primary" routerLink="/orders">View Your Order</button>
+        </div>
     </div>
 </div>
