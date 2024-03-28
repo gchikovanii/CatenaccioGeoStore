@@ -9,22 +9,22 @@
         </a>
         <ul *dropdownMenu class="dropdown-menu dropdown-menu-right">
           <li class="py-1">
-            <a class="dropdown-item" routerLink="/">Home</a>
-          </li>
-          <li class="py-1">
             <a class="dropdown-item" routerLink="/shop">Shop</a>
           </li>
           <li class="py-1">
             <a class="dropdown-item" routerLink="/contact">Contact</a>
+          </li>
+          <li class="py-1">
+            <a class="dropdown-item" routerLink="/">About Us</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <nav class="mx-3 my-3 text-uppercase fs-5 d-none d-md-flex">
-      <a class="mx-3" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
       <a class="mx-3" routerLink="/shop" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Shop</a>
       <a class="mx-3" routerLink="/contact" routerLinkActive="active">Contact</a>
+      <a class="mx-3" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">About Us</a>
     </nav>
   </div>
   <div class="d-flex align-items-center">
