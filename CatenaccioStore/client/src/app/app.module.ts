@@ -43,6 +43,7 @@ import { OrdersComponent } from './orders/orders.component';
 import { OrderDetailedComponent } from './order-detailed/order-detailed.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { ConfirmComponent } from './confirm/confirm.component';
 
 
 @NgModule({
@@ -74,6 +75,7 @@ import { ContactComponent } from './contact/contact.component';
     OrderDetailedComponent,
     FooterComponent,
     ContactComponent,
+    ConfirmComponent,
   ],
   imports: [
     BrowserModule,

@@ -16,7 +16,8 @@ namespace CatenaccioStore.Infrastructure.DataContext
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<DeliveryMethod> DeliveryMethods { get; set; }
-
+        public DbSet<PasswordRecoveryToken> PasswordRecoveryToken { get; set; }
+        public DbSet<UserConfirmationToken> UserConfirmationToken { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

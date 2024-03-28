@@ -14,6 +14,7 @@ import { CheckoutSuccessComponent } from './checkout/checkout-success/checkout-s
 import { OrdersComponent } from './orders/orders.component';
 import { OrderDetailedComponent } from './order-detailed/order-detailed.component';
 import { ContactComponent } from './contact/contact.component';
+import { ConfirmComponent } from './confirm/confirm.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -23,6 +24,8 @@ const routes: Routes = [
   {path:'success', component: CheckoutSuccessComponent},
   {path:'register', component: RegisterComponent},
   {path:'basket', component: BasketComponent},
+  { path: 'confirmation', component: ConfirmComponent },
+  { path: 'confirmation/:token', component: ConfirmComponent },
   {
     path: '',
     runGuardsAndResolvers: 'always',
