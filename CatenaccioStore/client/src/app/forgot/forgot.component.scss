@@ -1,0 +1,63 @@
+.tp-login-area {
+    background-color: #f9f9f9;
+    padding-top: 80px;
+}
+
+.tp-login-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.tp-login-subtitle {
+    font-size: 14px;
+    color: #777;
+}
+
+.tp-login-input {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.tp-login-input input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.tp-login-input-title label {
+    font-size: 16px;
+    color: #666;
+}
+
+.tp-login-btn {
+    background-color: #0466c8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tp-login-btn:hover {
+    background-color: #0466c8;
+}
+
+.tp-login-suggestions span {
+    font-size: 14px;
+    color: #777;
+}
+
+.tp-login-suggestions a {
+    color: #0466c8;
+    text-decoration: none;
+}
+
+.tp-login-suggestions a:hover {
+    text-decoration: underline;
+}

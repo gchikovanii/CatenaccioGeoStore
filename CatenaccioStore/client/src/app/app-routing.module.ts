@@ -15,6 +15,8 @@ import { OrdersComponent } from './orders/orders.component';
 import { OrderDetailedComponent } from './order-detailed/order-detailed.component';
 import { ContactComponent } from './contact/contact.component';
 import { ConfirmComponent } from './confirm/confirm.component';
+import { RecoveryComponent } from './recovery/recovery.component';
+import { ForgotComponent } from './forgot/forgot.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -24,6 +26,9 @@ const routes: Routes = [
   {path:'success', component: CheckoutSuccessComponent},
   {path:'register', component: RegisterComponent},
   {path:'basket', component: BasketComponent},
+  { path: 'forgot', component: ForgotComponent },
+  { path: 'recovery', component: RecoveryComponent },
+  { path: 'recovery/:token', component: RecoveryComponent },
   { path: 'confirmation', component: ConfirmComponent },
   { path: 'confirmation/:token', component: ConfirmComponent },
   {

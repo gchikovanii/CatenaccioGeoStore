@@ -44,6 +44,8 @@ import { OrderDetailedComponent } from './order-detailed/order-detailed.componen
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { ConfirmComponent } from './confirm/confirm.component';
+import { RecoveryComponent } from './recovery/recovery.component';
+import { ForgotComponent } from './forgot/forgot.component';
 
 
 @NgModule({
@@ -76,6 +78,8 @@ import { ConfirmComponent } from './confirm/confirm.component';
     FooterComponent,
     ContactComponent,
     ConfirmComponent,
+    RecoveryComponent,
+    ForgotComponent,
   ],
   imports: [
     BrowserModule,
