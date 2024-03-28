@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AccountService } from '../services/account.service';
 import { BasketService } from '../services/basket.service';
@@ -10,7 +10,9 @@ import { BasketService } from '../services/basket.service';
 })
 export class CheckoutComponent implements OnInit {
   checkoutForm!: FormGroup;
-
+  @HostListener('window:beforeunload',['$event']) unloadNotification($event : any){
+    $event.returnValue = true;
+  }
   constructor(
     private fb: FormBuilder,
     private accountService: AccountService,

@@ -1,6 +1,11 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-8">
+            <div class="alert alert-info pb-0">
+                <p><strong>ინფორმაცია: </strong>თუ შეწყვეტთ მიმდინარე პროცესს მონაცემები დაიკარგება!</p>
+            </div>
+        </div>
+        <div class="col-8">
             <app-stepper #appStepper>
                 <cdk-step [label]="'Address'" [completed]="checkoutForm.get('addressForm')?.valid"> <app-checkout-address [checkoutForm]="checkoutForm"></app-checkout-address> </cdk-step>
                 <cdk-step [label]="'Delivery'" [completed]="checkoutForm.get('deliveryForm')?.valid"> <app-checkout-delivery [checkoutForm]="checkoutForm"></app-checkout-delivery> </cdk-step>
