@@ -16,6 +16,7 @@ export class OrdersComponent implements OnInit {
   getOrders() {
   this.orderService.getOrdersForUser().subscribe({
   next: orders => this.orders = orders
+  
   })
   }
 }

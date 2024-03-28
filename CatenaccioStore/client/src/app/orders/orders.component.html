@@ -15,7 +15,15 @@
     <th>{{order.id}}</th>
     <td>{{order.orderDate | date: 'medium'}}</td>
     <td>{{order.total | currency}}</td> 
-    <td>{{order.orderStatus}}</td>
+    <ng-container *ngIf="order.orderStatus.toString() === 'Payment Failed'">
+        <td class="text-danger">{{order.orderStatus}}</td>
+    </ng-container>
+    <ng-container *ngIf="order.orderStatus.toString() === 'Pending'">
+        <td style="color: #0466c8;">{{order.orderStatus}}</td>
+    </ng-container>
+    <ng-container *ngIf="order.orderStatus.toString() === 'Payment Recevied'">
+        <td class="text-success">{{order.orderStatus}}</td>
+    </ng-container>
     </tr>
     </tbody>
     </table>
