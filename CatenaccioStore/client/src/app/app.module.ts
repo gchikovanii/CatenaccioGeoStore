@@ -41,6 +41,7 @@ import { JwtInterceptor } from './errors/interceptors/jwt';
 import { BasketSummaryComponent } from './shared/basket-summary/basket-summary.component';
 import { OrdersComponent } from './orders/orders.component';
 import { OrderDetailedComponent } from './order-detailed/order-detailed.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -70,6 +71,7 @@ import { OrderDetailedComponent } from './order-detailed/order-detailed.componen
     BasketSummaryComponent,
     OrdersComponent,
     OrderDetailedComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

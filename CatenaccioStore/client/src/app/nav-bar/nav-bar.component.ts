@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faBars, faBurger, faHistory, faShoppingCart, faSignOut, faUser, faUserCircle, faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faHistory, faShoppingCart, faSignOut, faUser, faUserCircle, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 import { BasketService } from '../services/basket.service';
 import { BaksetItem } from '../models/BasketItem';
 import { AccountService } from '../services/account.service';
