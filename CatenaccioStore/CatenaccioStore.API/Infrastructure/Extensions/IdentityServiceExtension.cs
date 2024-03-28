@@ -21,7 +21,7 @@ namespace CatenaccioStore.API.Infrastructure.Extensions
             {
                 //Password complecity
             }).AddEntityFrameworkStores<AppIdentityDbContext>()
-            .AddSignInManager<SignInManager<AppUser>>();
+            .AddSignInManager<SignInManager<AppUser>>().AddDefaultTokenProviders(); ;
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {

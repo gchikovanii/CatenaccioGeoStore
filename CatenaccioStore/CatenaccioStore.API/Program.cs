@@ -5,6 +5,7 @@ using CatenaccioStore.Core.Entities.Identities;
 using CatenaccioStore.Infrastructure.DaataSeeding;
 using CatenaccioStore.Infrastructure.DataContext;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,7 +15,6 @@ builder.Services.AddServices(builder.Configuration);
 builder.Services.AddIdentityServices(builder.Configuration);
 builder.Services.Configure<GoogleAppSettings>(builder.Configuration.GetSection("GoogleAppSettings"));
 builder.Services.AddSwaggerDocumentation();
-
 var app = builder.Build();
 
 app.UseMiddleware<ExceptionMiddleware>();
