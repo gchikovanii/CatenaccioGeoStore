@@ -33,11 +33,11 @@
     </div>
     </div>
     </th>
-    <td class="align-middle"><strong>{{item.price | currency}}</strong></td>
+    <td class="align-middle"><strong>{{item.price}}₾</strong></td>
     <td class="align-middle">
     <span class="font-weight-bold px-2">{{item.quantity}}</span>
     </td>
-    <td class="align-middle"><strong>{{item.price * item.quantity | currency}}</strong></td>
+    <td class="align-middle"><strong>{{item.price * item.quantity}}₾</strong></td>
     </tr>
     </tbody>
     </table>
@@ -51,15 +51,15 @@
     <ul class="list-unstyled mb-1">
     <li class="d-flex justify-content-between py-3 border-bottom">
     <strong class="text-muted">Order subtotal</strong>
-    <strong>{{order.subtotal | currency}}</strong>
+    <strong>{{order.subtotal }}₾</strong>
     </li>
     <li class="d-flex justify-content-between py-3 border-bottom">
     <strong class="text-muted">Shipping and handling</strong>
-    <strong>{{(order.total - order.subtotal)| currency}}</strong>
+    <strong>{{(order.total - order.subtotal)}}₾</strong>
     </li>
     <li class="d-flex justify-content-between py-3 border-bottom">
     <strong class="text-muted">Total</strong>
-    <strong>{{order.total | currency}}</strong>
+    <strong>{{order.total }}₾</strong>
     </li>
     </ul>
     </div>

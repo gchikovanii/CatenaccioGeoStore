@@ -18,7 +18,7 @@
     <tr *ngFor="let order of orders" routerLink="/orders/{{order.id}}">
     <th>{{order.id}}</th>
     <td>{{order.orderDate | date: 'medium'}}</td>
-    <td>{{order.total | currency}}</td> 
+    <td>{{order.total}}₾</td> 
     <ng-container *ngIf="order.orderStatus.toString() === 'Payment Failed'">
         <td class="text-danger">{{'pF' | translate}}</td>
 
