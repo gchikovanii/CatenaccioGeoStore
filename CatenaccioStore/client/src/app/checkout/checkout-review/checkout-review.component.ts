@@ -19,8 +19,12 @@ export class CheckoutReviewComponent {
   createPaymentIntent(){
     this.basketService.createPaymentIntent().subscribe({
       next: () => {this.appStepper?.next()},
-      error: error => this.snackBar.open(error.message),
+      error: error => this.openSnackBar('' + error.message,'error')
     })
   }
-
+  openSnackBar(message: string, action: string) {
+    this.snackBar.open(message, action, {
+      duration: 3000, 
+    });
+  }
 }

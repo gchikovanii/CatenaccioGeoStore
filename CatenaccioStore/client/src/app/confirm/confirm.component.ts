@@ -47,7 +47,7 @@ export class ConfirmComponent  implements OnInit {
   }
   openSnackBar(message: string, action: string) {
     this.snackBar.open(message, action, {
-      duration: 4000, 
+      duration: 3000, 
     });
   }
 }

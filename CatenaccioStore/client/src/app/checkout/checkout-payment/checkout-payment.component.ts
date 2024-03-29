@@ -99,17 +99,11 @@ export class CheckoutPaymentComponent implements OnInit, AfterViewInit{
       }
       else{
         var message = paymentResult.error.message;
-        
-        this.snackBar.open(
-          'Failed: ' + message
-        );
+        this.openSnackBar(''+ message,'failed')
       }
     }
     catch(error: any){
-      console.log(error);
-      this.snackBar.open(
-        'Failed: ' + error.message
-      );
+      this.openSnackBar(''+ error.message,'failed')
     }
     finally{
       this.loading = false;
@@ -149,5 +143,9 @@ export class CheckoutPaymentComponent implements OnInit, AfterViewInit{
       shipToAddress: shipToAddress
     }
   }
-
+  openSnackBar(message: string, action: string) {
+    this.snackBar.open(message, action, {
+      duration: 3000, 
+    });
+  }
 }

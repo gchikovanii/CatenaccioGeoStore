@@ -64,7 +64,7 @@ export class AccountService {
   }
   openSnackBar(message: string, action: string) {
     this.matSnackBar.open(message, action, {
-      duration: 4000, 
+      duration: 3000, 
     });
   }
 }

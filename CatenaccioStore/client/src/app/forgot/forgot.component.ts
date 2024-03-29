@@ -43,7 +43,7 @@ export class ForgotComponent {
 
   openSnackBar(message: string) {
     this.snackBar.open(message, 'Close', {
-      duration: 4000 
+      duration: 3000 
     });
   
   }

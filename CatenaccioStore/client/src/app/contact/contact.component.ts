@@ -32,7 +32,7 @@ export class ContactComponent {
   }
   openSnackBar(message: string, action: string) {
     this.snackBar.open(message, action, {
-      duration: 4000, 
+      duration: 3000, 
     });
   }
 }
