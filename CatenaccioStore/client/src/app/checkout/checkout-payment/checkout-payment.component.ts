@@ -42,7 +42,6 @@ export class CheckoutPaymentComponent implements OnInit, AfterViewInit{
   ngAfterViewInit(): void {
     loadStripe('pk_test_51OyTGYRuZrvhruxsYFDynSr6O35WoZVJW3qJzt9J7Otjsv8nY6Px8RDXAxczptWA5Yg7mE7MkvwEgeyZyDSUhb5w00VU10Ju5x').then(stripe => {
       this.stripe = stripe;
-      console.log('Stripe loaded:', stripe);
       const elements = stripe?.elements();
       if (elements) {
         this.cardNumber = elements.create('cardNumber');
