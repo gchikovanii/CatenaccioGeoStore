@@ -179,3 +179,9 @@ D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\Newtons
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\Stripe.net.dll
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\Mapster.dll
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\Mapster.Core.dll
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\Npgsql.dll
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\DaataSeeding\SeedData\brands.json
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\DaataSeeding\SeedData\delivery.json
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\DaataSeeding\SeedData\products.json
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.API\bin\Debug\net8.0\DaataSeeding\SeedData\types.json

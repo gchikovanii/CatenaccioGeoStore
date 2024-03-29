@@ -23,12 +23,14 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.4.1" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.2" />
     <PackageReference Include="StackExchange.Redis" Version="2.7.33" />
     <PackageReference Include="Stripe.net" Version="43.20.0" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.4.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="DaataSeeding\SeedData\**" CopyToOutputDirectory="PreserveNewest" />
     <ProjectReference Include="..\CatenaccioStore.Core\CatenaccioStore.Core.csproj" />
   </ItemGroup>
 

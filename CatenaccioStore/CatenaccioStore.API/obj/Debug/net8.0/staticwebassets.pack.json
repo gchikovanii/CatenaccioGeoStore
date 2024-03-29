@@ -1,156 +1,172 @@
 {
   "Files": [
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\guram_kashia.png",
-      "PackagePath": "staticwebassets\\images\\prods\\Bags\\guram_kashia.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\3rdpartylicenses.txt",
+      "PackagePath": "staticwebassets\\3rdpartylicenses.txt"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\khvicha_cshh_cisferi.png",
-      "PackagePath": "staticwebassets\\images\\prods\\Bags\\khvicha_cshh_cisferi.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\fonts\\arial_geo.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\arial_geo.ttf"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\khvicha_cshh_lurji.png",
-      "PackagePath": "staticwebassets\\images\\prods\\Bags\\khvicha_cshh_lurji.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\fonts\\dm-medea.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\dm-medea.ttf"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\khvicha_cshh_shavi.png",
-      "PackagePath": "staticwebassets\\images\\prods\\Bags\\khvicha_cshh_shavi.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\i18n\\en.json",
+      "PackagePath": "staticwebassets\\assets\\i18n\\en.json"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\khvicha_kiss_cisferi.png",
-      "PackagePath": "staticwebassets\\images\\prods\\Bags\\khvicha_kiss_cisferi.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\i18n\\ka.json",
+      "PackagePath": "staticwebassets\\assets\\i18n\\ka.json"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\khvicha_kiss_lurji.png",
-      "PackagePath": "staticwebassets\\images\\prods\\Bags\\khvicha_kiss_lurji.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\images\\back_1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\back_1.png"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\mamarda_mwvane.png",
-      "PackagePath": "staticwebassets\\images\\prods\\Bags\\mamarda_mwvane.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\images\\borxa.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\borxa.jpg"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\zuriko_messi.png",
-      "PackagePath": "staticwebassets\\images\\prods\\Bags\\zuriko_messi.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo.png"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\arsenal.png",
-      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\arsenal.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\images\\not-found.png",
+      "PackagePath": "staticwebassets\\assets\\images\\not-found.png"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\barcelona.png",
-      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\barcelona.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\images\\ori.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\ori.jpg"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\bayern.png",
-      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\bayern.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\images\\placeholder.png",
+      "PackagePath": "staticwebassets\\assets\\images\\placeholder.png"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\chelsea.png",
-      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\chelsea.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\images\\sami.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\sami.jpg"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\inter.png",
-      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\inter.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\images\\sharika.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\sharika.jpg"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\juve.png",
-      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\juve.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\basket\\index.html",
+      "PackagePath": "staticwebassets\\basket\\index.html"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\khvicha.png",
-      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\khvicha.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\checkout\\index.html",
+      "PackagePath": "staticwebassets\\checkout\\index.html"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\liverpool.png",
-      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\liverpool.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\chunk-Q24YB367.js",
+      "PackagePath": "staticwebassets\\chunk-Q24YB367.js"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\manutd.png",
-      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\manutd.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\chunk-T6PUNXGZ.js",
+      "PackagePath": "staticwebassets\\chunk-T6PUNXGZ.js"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\milan.png",
-      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\milan.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\confirmation\\index.html",
+      "PackagePath": "staticwebassets\\confirmation\\index.html"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\psg.png",
-      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\psg.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\contact\\index.html",
+      "PackagePath": "staticwebassets\\contact\\index.html"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\real.png",
-      "PackagePath": "staticwebassets\\images\\prods\\Keychains\\real.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\boot-ang1.png",
-      "PackagePath": "staticwebassets\\images\\products\\boot-ang1.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\forgot\\index.html",
+      "PackagePath": "staticwebassets\\forgot\\index.html"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\boot-ang2.png",
-      "PackagePath": "staticwebassets\\images\\products\\boot-ang2.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\boot-core1.png",
-      "PackagePath": "staticwebassets\\images\\products\\boot-core1.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\login\\index.html",
+      "PackagePath": "staticwebassets\\login\\index.html"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\boot-core2.png",
-      "PackagePath": "staticwebassets\\images\\products\\boot-core2.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\main-SWRTROQ3.js",
+      "PackagePath": "staticwebassets\\main-SWRTROQ3.js"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\boot-redis1.png",
-      "PackagePath": "staticwebassets\\images\\products\\boot-redis1.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\not-found\\index.html",
+      "PackagePath": "staticwebassets\\not-found\\index.html"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\glove-code1.png",
-      "PackagePath": "staticwebassets\\images\\products\\glove-code1.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\orders\\index.html",
+      "PackagePath": "staticwebassets\\orders\\index.html"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\glove-code2.png",
-      "PackagePath": "staticwebassets\\images\\products\\glove-code2.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\polyfills-RT5I6R6G.js",
+      "PackagePath": "staticwebassets\\polyfills-RT5I6R6G.js"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\glove-react1.png",
-      "PackagePath": "staticwebassets\\images\\products\\glove-react1.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\prerendered-routes.json",
+      "PackagePath": "staticwebassets\\prerendered-routes.json"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\glove-react2.png",
-      "PackagePath": "staticwebassets\\images\\products\\glove-react2.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\recovery\\index.html",
+      "PackagePath": "staticwebassets\\recovery\\index.html"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\hat-core1.png",
-      "PackagePath": "staticwebassets\\images\\products\\hat-core1.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\register\\index.html",
+      "PackagePath": "staticwebassets\\register\\index.html"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\hat-react1.png",
-      "PackagePath": "staticwebassets\\images\\products\\hat-react1.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\server-error\\index.html",
+      "PackagePath": "staticwebassets\\server-error\\index.html"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\hat-react2.png",
-      "PackagePath": "staticwebassets\\images\\products\\hat-react2.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\server\\chunk-7RO7RFPC.mjs",
+      "PackagePath": "staticwebassets\\server\\chunk-7RO7RFPC.mjs"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\sb-ang1.png",
-      "PackagePath": "staticwebassets\\images\\products\\sb-ang1.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\server\\chunk-ENE5CSR3.mjs",
+      "PackagePath": "staticwebassets\\server\\chunk-ENE5CSR3.mjs"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\sb-ang2.png",
-      "PackagePath": "staticwebassets\\images\\products\\sb-ang2.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\server\\chunk-LIM73WXI.mjs",
+      "PackagePath": "staticwebassets\\server\\chunk-LIM73WXI.mjs"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\sb-core1.png",
-      "PackagePath": "staticwebassets\\images\\products\\sb-core1.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\server\\chunk-WREBW22M.mjs",
+      "PackagePath": "staticwebassets\\server\\chunk-WREBW22M.mjs"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\sb-core2.png",
-      "PackagePath": "staticwebassets\\images\\products\\sb-core2.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\server\\chunk-XVCKQGY5.mjs",
+      "PackagePath": "staticwebassets\\server\\chunk-XVCKQGY5.mjs"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\sb-react1.png",
-      "PackagePath": "staticwebassets\\images\\products\\sb-react1.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\server\\main.server.mjs",
+      "PackagePath": "staticwebassets\\server\\main.server.mjs"
     },
     {
-      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\sb-ts1.png",
-      "PackagePath": "staticwebassets\\images\\products\\sb-ts1.png"
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\server\\polyfills.server.mjs",
+      "PackagePath": "staticwebassets\\server\\polyfills.server.mjs"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\server\\render-utils.server.mjs",
+      "PackagePath": "staticwebassets\\server\\render-utils.server.mjs"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\shop\\index.html",
+      "PackagePath": "staticwebassets\\shop\\index.html"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\styles-BRCTWJ5D.css",
+      "PackagePath": "staticwebassets\\styles-BRCTWJ5D.css"
+    },
+    {
+      "Id": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\success\\index.html",
+      "PackagePath": "staticwebassets\\success\\index.html"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CatenaccioStore.API.Microsoft.AspNetCore.StaticWebAssets.props",

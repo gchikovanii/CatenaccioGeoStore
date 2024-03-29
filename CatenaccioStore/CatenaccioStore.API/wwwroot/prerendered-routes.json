@@ -1,0 +1,18 @@
+{
+  "routes": [
+    "/",
+    "/basket",
+    "/checkout",
+    "/confirmation",
+    "/contact",
+    "/forgot",
+    "/login",
+    "/not-found",
+    "/orders",
+    "/recovery",
+    "/register",
+    "/server-error",
+    "/shop",
+    "/success"
+  ]
+}

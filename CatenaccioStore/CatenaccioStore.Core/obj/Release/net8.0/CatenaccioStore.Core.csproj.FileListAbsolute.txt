@@ -1,0 +1,13 @@
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Core\bin\Release\net8.0\CatenaccioStore.Core.deps.json
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Core\bin\Release\net8.0\CatenaccioStore.Core.dll
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Core\bin\Release\net8.0\CatenaccioStore.Core.pdb
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Core\obj\Release\net8.0\CatenaccioStore.Core.csproj.AssemblyReference.cache
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Core\obj\Release\net8.0\CatenaccioStore.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Core\obj\Release\net8.0\CatenaccioStore.Core.AssemblyInfoInputs.cache
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Core\obj\Release\net8.0\CatenaccioStore.Core.AssemblyInfo.cs
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Core\obj\Release\net8.0\CatenaccioStore.Core.csproj.CoreCompileInputs.cache
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Core\obj\Release\net8.0\CatenaccioStore.Core.sourcelink.json
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Core\obj\Release\net8.0\CatenaccioStore.Core.dll
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Core\obj\Release\net8.0\refint\CatenaccioStore.Core.dll
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Core\obj\Release\net8.0\CatenaccioStore.Core.pdb
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Core\obj\Release\net8.0\ref\CatenaccioStore.Core.dll

@@ -18,9 +18,10 @@ export class ProductDetailsComponent implements OnInit{
   plus = faPlusCircle;
   quantity = 1;
   quantityInBasket = 0;
-
+  lang!: string | null;
   ngOnInit(): void {
     this.loadProduct();
+    this.lang = localStorage.getItem('lang');
   }
   loadProduct(){
     const id = this.activatedRoute.snapshot.paramMap.get('id');

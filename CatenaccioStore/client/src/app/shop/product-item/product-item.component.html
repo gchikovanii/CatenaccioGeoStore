@@ -9,8 +9,11 @@
   
     <div class="card-body d-flex flex-column">
       <a routerLink="/shop/{{product.id}}" class="text-decoration-none">
-        <h4 style="color: #0466c8;" class="text-uppercase">
+        <h4 *ngIf="lang === 'en'" style="color: #0466c8;" class="text-uppercase">
           {{product.name}}
+        </h4>
+        <h4 *ngIf="lang === 'ka'" style="color: #0466c8;" class="text-uppercase">
+          {{product.nameGeo}}
         </h4>
       </a>
       <span class="mb-2">{{product.price}}₾</span>

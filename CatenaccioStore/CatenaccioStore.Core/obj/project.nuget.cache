@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Dr8BW6hl6MGSaSG4smM6Y9x/DZrZ8FtDW7p1gilkZnVArrNNPhaml2LLW3h2kCKtq/mjiiF927PMI33wmbC8wA==",
+  "dgSpecHash": "TaT5mRElcCVq4IpphdaQvEvaXknhAkM6MWEkXRRk3nTbh7JmMNo7mWWKLjPQVSLZVMPDlDRkjxmb9QOM41eJoQ==",
   "success": true,
   "projectFilePath": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.Core\\CatenaccioStore.Core.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,8 @@
     "C:\\Users\\gchik\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.4.1\\microsoft.identitymodel.tokens.7.4.1.nupkg.sha512",
     "C:\\Users\\gchik\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\gchik\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\gchik\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
+    "C:\\Users\\gchik\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.2\\npgsql.entityframeworkcore.postgresql.8.0.2.nupkg.sha512",
     "C:\\Users\\gchik\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
     "C:\\Users\\gchik\\.nuget\\packages\\stackexchange.redis\\2.7.33\\stackexchange.redis.2.7.33.nupkg.sha512",
     "C:\\Users\\gchik\\.nuget\\packages\\stripe.net\\43.20.0\\stripe.net.43.20.0.nupkg.sha512",

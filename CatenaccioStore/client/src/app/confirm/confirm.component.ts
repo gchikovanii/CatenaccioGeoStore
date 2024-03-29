@@ -28,7 +28,7 @@ export class ConfirmComponent  implements OnInit {
     this.confirmationService.confirmEmail(this.token).subscribe(
       (success) => {
         if (success) {
-          this.openSnackBar('Password confirmed successfully','Success');
+          this.openSnackBar('Your account activated succesfully','Success');
         } else {
           this.openSnackBar('Error while confirming password','Failed');
         }

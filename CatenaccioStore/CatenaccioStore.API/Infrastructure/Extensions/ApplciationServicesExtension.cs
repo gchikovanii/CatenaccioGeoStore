@@ -17,7 +17,7 @@ namespace CatenaccioStore.API.Infrastructure.Extensions
         {
 
             services.AddDbContext<ApplicationDbContext>(options =>
-                                                              options.UseSqlite(config.GetConnectionString("DefaultConnectionString")));
+                                                              options.UseNpgsql(config.GetConnectionString("DefaultConnectionString")));
             services.AddSingleton<IConnectionMultiplexer>(i =>
             {
                 var options = ConfigurationOptions.Parse(config.GetConnectionString("Redis"));

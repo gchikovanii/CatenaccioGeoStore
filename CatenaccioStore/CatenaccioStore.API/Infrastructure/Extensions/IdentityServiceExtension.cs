@@ -15,7 +15,7 @@ namespace CatenaccioStore.API.Infrastructure.Extensions
         {
             services.AddDbContext<AppIdentityDbContext>(opt =>
             {
-                opt.UseSqlite(config.GetConnectionString("IdentityConnectionString"));
+                opt.UseNpgsql(config.GetConnectionString("IdentityConnectionString"));
             });
             services.AddIdentityCore<AppUser>(opt =>
             {

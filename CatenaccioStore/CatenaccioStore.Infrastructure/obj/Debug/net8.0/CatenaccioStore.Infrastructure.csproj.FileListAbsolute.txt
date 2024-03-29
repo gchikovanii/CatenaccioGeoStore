@@ -16,3 +16,7 @@ D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Infrastructure\obj\Debug\net
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Infrastructure\obj\Debug\net8.0\CatenaccioStore.Infrastructure.pdb
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Infrastructure\obj\Debug\net8.0\CatenaccioStore.Infrastructure.genruntimeconfig.cache
 D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Infrastructure\obj\Debug\net8.0\ref\CatenaccioStore.Infrastructure.dll
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Infrastructure\bin\Debug\net8.0\DaataSeeding\SeedData\brands.json
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Infrastructure\bin\Debug\net8.0\DaataSeeding\SeedData\delivery.json
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Infrastructure\bin\Debug\net8.0\DaataSeeding\SeedData\products.json
+D:\CatenacccioStore\CatenaccioStore\CatenaccioStore.Infrastructure\bin\Debug\net8.0\DaataSeeding\SeedData\types.json

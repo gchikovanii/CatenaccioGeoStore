@@ -12,11 +12,12 @@ namespace CatenaccioStore.API.Controllers
     {
         private readonly IPaymentService _paymentService;
         private readonly ILogger<PaymentsController> _logger;
-        private const string WhSecret = "whsec_a6595b314fdbab7ad1f643e699a2355c3850b1d599fb26ab3e4f390a301912fe";
-        public PaymentsController(IPaymentService paymentService, ILogger<PaymentsController> logger)
+        private readonly string _whSecret;
+        public PaymentsController(IConfiguration config,IPaymentService paymentService, ILogger<PaymentsController> logger)
         {
             _paymentService = paymentService;
             _logger = logger;
+            _whSecret = config.GetSection("StripeSettings:WhSecret").Value;
         }
 
 
@@ -33,7 +34,7 @@ namespace CatenaccioStore.API.Controllers
         public async Task<ActionResult> StripeWebHook(CancellationToken token)
         {
             var json = await new StreamReader(Request.Body).ReadToEndAsync();
-            var stripeEvent = EventUtility.ConstructEvent(json, Request.Headers["Stripe-Signature"], WhSecret);
+            var stripeEvent = EventUtility.ConstructEvent(json, Request.Headers["Stripe-Signature"], _whSecret);
             PaymentIntent intent;
             Order order;
 

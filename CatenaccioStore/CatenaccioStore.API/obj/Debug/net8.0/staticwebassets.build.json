@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nYfEIYzZDBypmpndiUQDftwG48eVHqxKCOx6yBy6Nxs=",
+  "Hash": "RWsfrr4F6EsxzCGdc1jzHOJxAzTUoMvTl6lDYF7qe48=",
   "Source": "CatenaccioStore.API",
   "BasePath": "_content/CatenaccioStore.API",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\guram_kashia.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\3rdpartylicenses.txt",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/prods/Bags/guram_kashia.png",
+      "RelativePath": "3rdpartylicenses.txt",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -33,15 +33,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\prods\\Bags\\guram_kashia.png"
+      "OriginalItemSpec": "wwwroot\\3rdpartylicenses.txt"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\khvicha_cshh_cisferi.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\fonts\\arial_geo.ttf",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/prods/Bags/khvicha_cshh_cisferi.png",
+      "RelativePath": "assets/fonts/arial_geo.ttf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -52,15 +52,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\prods\\Bags\\khvicha_cshh_cisferi.png"
+      "OriginalItemSpec": "wwwroot\\assets\\fonts\\arial_geo.ttf"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\khvicha_cshh_lurji.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\fonts\\dm-medea.ttf",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/prods/Bags/khvicha_cshh_lurji.png",
+      "RelativePath": "assets/fonts/dm-medea.ttf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -71,15 +71,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\prods\\Bags\\khvicha_cshh_lurji.png"
+      "OriginalItemSpec": "wwwroot\\assets\\fonts\\dm-medea.ttf"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\khvicha_cshh_shavi.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\i18n\\en.json",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/prods/Bags/khvicha_cshh_shavi.png",
+      "RelativePath": "assets/i18n/en.json",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -90,15 +90,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\prods\\Bags\\khvicha_cshh_shavi.png"
+      "OriginalItemSpec": "wwwroot\\assets\\i18n\\en.json"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\khvicha_kiss_cisferi.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\i18n\\ka.json",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/prods/Bags/khvicha_kiss_cisferi.png",
+      "RelativePath": "assets/i18n/ka.json",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -109,15 +109,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\prods\\Bags\\khvicha_kiss_cisferi.png"
+      "OriginalItemSpec": "wwwroot\\assets\\i18n\\ka.json"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\khvicha_kiss_lurji.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\images\\back_1.png",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/prods/Bags/khvicha_kiss_lurji.png",
+      "RelativePath": "assets/images/back_1.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -128,15 +128,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\prods\\Bags\\khvicha_kiss_lurji.png"
+      "OriginalItemSpec": "wwwroot\\assets\\images\\back_1.png"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\mamarda_mwvane.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\images\\borxa.jpg",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/prods/Bags/mamarda_mwvane.png",
+      "RelativePath": "assets/images/borxa.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -147,15 +147,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\prods\\Bags\\mamarda_mwvane.png"
+      "OriginalItemSpec": "wwwroot\\assets\\images\\borxa.jpg"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Bags\\zuriko_messi.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\images\\logo.png",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/prods/Bags/zuriko_messi.png",
+      "RelativePath": "assets/images/logo.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -166,15 +166,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\prods\\Bags\\zuriko_messi.png"
+      "OriginalItemSpec": "wwwroot\\assets\\images\\logo.png"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\arsenal.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\images\\not-found.png",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/prods/Keychains/arsenal.png",
+      "RelativePath": "assets/images/not-found.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -185,15 +185,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\prods\\Keychains\\arsenal.png"
+      "OriginalItemSpec": "wwwroot\\assets\\images\\not-found.png"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\barcelona.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\images\\ori.jpg",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/prods/Keychains/barcelona.png",
+      "RelativePath": "assets/images/ori.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -204,15 +204,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\prods\\Keychains\\barcelona.png"
+      "OriginalItemSpec": "wwwroot\\assets\\images\\ori.jpg"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\bayern.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\images\\placeholder.png",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/prods/Keychains/bayern.png",
+      "RelativePath": "assets/images/placeholder.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -223,15 +223,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\prods\\Keychains\\bayern.png"
+      "OriginalItemSpec": "wwwroot\\assets\\images\\placeholder.png"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\chelsea.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\images\\sami.jpg",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/prods/Keychains/chelsea.png",
+      "RelativePath": "assets/images/sami.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -242,15 +242,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\prods\\Keychains\\chelsea.png"
+      "OriginalItemSpec": "wwwroot\\assets\\images\\sami.jpg"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\inter.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\assets\\images\\sharika.jpg",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/prods/Keychains/inter.png",
+      "RelativePath": "assets/images/sharika.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -261,15 +261,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\prods\\Keychains\\inter.png"
+      "OriginalItemSpec": "wwwroot\\assets\\images\\sharika.jpg"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\juve.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\basket\\index.html",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/prods/Keychains/juve.png",
+      "RelativePath": "basket/index.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -280,15 +280,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\prods\\Keychains\\juve.png"
+      "OriginalItemSpec": "wwwroot\\basket\\index.html"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\khvicha.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\checkout\\index.html",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/prods/Keychains/khvicha.png",
+      "RelativePath": "checkout/index.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -299,15 +299,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\prods\\Keychains\\khvicha.png"
+      "OriginalItemSpec": "wwwroot\\checkout\\index.html"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\liverpool.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\chunk-Q24YB367.js",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/prods/Keychains/liverpool.png",
+      "RelativePath": "chunk-Q24YB367.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -318,15 +318,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\prods\\Keychains\\liverpool.png"
+      "OriginalItemSpec": "wwwroot\\chunk-Q24YB367.js"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\manutd.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\chunk-T6PUNXGZ.js",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/prods/Keychains/manutd.png",
+      "RelativePath": "chunk-T6PUNXGZ.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -337,15 +337,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\prods\\Keychains\\manutd.png"
+      "OriginalItemSpec": "wwwroot\\chunk-T6PUNXGZ.js"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\milan.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\confirmation\\index.html",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/prods/Keychains/milan.png",
+      "RelativePath": "confirmation/index.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -356,15 +356,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\prods\\Keychains\\milan.png"
+      "OriginalItemSpec": "wwwroot\\confirmation\\index.html"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\psg.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\contact\\index.html",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/prods/Keychains/psg.png",
+      "RelativePath": "contact/index.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -375,15 +375,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\prods\\Keychains\\psg.png"
+      "OriginalItemSpec": "wwwroot\\contact\\index.html"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\prods\\Keychains\\real.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\favicon.ico",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/prods/Keychains/real.png",
+      "RelativePath": "favicon.ico",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -394,15 +394,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\prods\\Keychains\\real.png"
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\boot-ang1.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\forgot\\index.html",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/products/boot-ang1.png",
+      "RelativePath": "forgot/index.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -413,15 +413,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\boot-ang1.png"
+      "OriginalItemSpec": "wwwroot\\forgot\\index.html"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\boot-ang2.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\index.html",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/products/boot-ang2.png",
+      "RelativePath": "index.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -432,15 +432,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\boot-ang2.png"
+      "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\boot-core1.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\login\\index.html",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/products/boot-core1.png",
+      "RelativePath": "login/index.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -451,15 +451,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\boot-core1.png"
+      "OriginalItemSpec": "wwwroot\\login\\index.html"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\boot-core2.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\main-SWRTROQ3.js",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/products/boot-core2.png",
+      "RelativePath": "main-SWRTROQ3.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -470,15 +470,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\boot-core2.png"
+      "OriginalItemSpec": "wwwroot\\main-SWRTROQ3.js"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\boot-redis1.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\not-found\\index.html",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/products/boot-redis1.png",
+      "RelativePath": "not-found/index.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -489,15 +489,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\boot-redis1.png"
+      "OriginalItemSpec": "wwwroot\\not-found\\index.html"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\glove-code1.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\orders\\index.html",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/products/glove-code1.png",
+      "RelativePath": "orders/index.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -508,15 +508,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\glove-code1.png"
+      "OriginalItemSpec": "wwwroot\\orders\\index.html"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\glove-code2.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\polyfills-RT5I6R6G.js",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/products/glove-code2.png",
+      "RelativePath": "polyfills-RT5I6R6G.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -527,15 +527,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\glove-code2.png"
+      "OriginalItemSpec": "wwwroot\\polyfills-RT5I6R6G.js"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\glove-react1.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\prerendered-routes.json",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/products/glove-react1.png",
+      "RelativePath": "prerendered-routes.json",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -546,15 +546,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\glove-react1.png"
+      "OriginalItemSpec": "wwwroot\\prerendered-routes.json"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\glove-react2.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\recovery\\index.html",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/products/glove-react2.png",
+      "RelativePath": "recovery/index.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -565,15 +565,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\glove-react2.png"
+      "OriginalItemSpec": "wwwroot\\recovery\\index.html"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\hat-core1.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\register\\index.html",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/products/hat-core1.png",
+      "RelativePath": "register/index.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -584,15 +584,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\hat-core1.png"
+      "OriginalItemSpec": "wwwroot\\register\\index.html"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\hat-react1.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\server\\chunk-7RO7RFPC.mjs",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/products/hat-react1.png",
+      "RelativePath": "server/chunk-7RO7RFPC.mjs",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -603,15 +603,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\hat-react1.png"
+      "OriginalItemSpec": "wwwroot\\server\\chunk-7RO7RFPC.mjs"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\hat-react2.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\server\\chunk-ENE5CSR3.mjs",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/products/hat-react2.png",
+      "RelativePath": "server/chunk-ENE5CSR3.mjs",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -622,15 +622,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\hat-react2.png"
+      "OriginalItemSpec": "wwwroot\\server\\chunk-ENE5CSR3.mjs"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\sb-ang1.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\server\\chunk-LIM73WXI.mjs",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/products/sb-ang1.png",
+      "RelativePath": "server/chunk-LIM73WXI.mjs",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -641,15 +641,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\sb-ang1.png"
+      "OriginalItemSpec": "wwwroot\\server\\chunk-LIM73WXI.mjs"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\sb-ang2.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\server\\chunk-WREBW22M.mjs",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/products/sb-ang2.png",
+      "RelativePath": "server/chunk-WREBW22M.mjs",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -660,15 +660,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\sb-ang2.png"
+      "OriginalItemSpec": "wwwroot\\server\\chunk-WREBW22M.mjs"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\sb-core1.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\server\\chunk-XVCKQGY5.mjs",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/products/sb-core1.png",
+      "RelativePath": "server/chunk-XVCKQGY5.mjs",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -679,15 +679,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\sb-core1.png"
+      "OriginalItemSpec": "wwwroot\\server\\chunk-XVCKQGY5.mjs"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\sb-core2.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\server\\main.server.mjs",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/products/sb-core2.png",
+      "RelativePath": "server/main.server.mjs",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -698,15 +698,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\sb-core2.png"
+      "OriginalItemSpec": "wwwroot\\server\\main.server.mjs"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\sb-react1.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\server\\polyfills.server.mjs",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/products/sb-react1.png",
+      "RelativePath": "server/polyfills.server.mjs",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -717,15 +717,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\sb-react1.png"
+      "OriginalItemSpec": "wwwroot\\server\\polyfills.server.mjs"
     },
     {
-      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\images\\products\\sb-ts1.png",
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\server\\render-utils.server.mjs",
       "SourceId": "CatenaccioStore.API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
       "BasePath": "_content/CatenaccioStore.API",
-      "RelativePath": "images/products/sb-ts1.png",
+      "RelativePath": "server/render-utils.server.mjs",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -736,7 +736,83 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\sb-ts1.png"
+      "OriginalItemSpec": "wwwroot\\server\\render-utils.server.mjs"
+    },
+    {
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\server-error\\index.html",
+      "SourceId": "CatenaccioStore.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
+      "BasePath": "_content/CatenaccioStore.API",
+      "RelativePath": "server-error/index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\server-error\\index.html"
+    },
+    {
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\shop\\index.html",
+      "SourceId": "CatenaccioStore.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
+      "BasePath": "_content/CatenaccioStore.API",
+      "RelativePath": "shop/index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\shop\\index.html"
+    },
+    {
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\styles-BRCTWJ5D.css",
+      "SourceId": "CatenaccioStore.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
+      "BasePath": "_content/CatenaccioStore.API",
+      "RelativePath": "styles-BRCTWJ5D.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\styles-BRCTWJ5D.css"
+    },
+    {
+      "Identity": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\success\\index.html",
+      "SourceId": "CatenaccioStore.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CatenacccioStore\\CatenaccioStore\\CatenaccioStore.API\\wwwroot\\",
+      "BasePath": "_content/CatenaccioStore.API",
+      "RelativePath": "success/index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\success\\index.html"
     }
   ]
 }
