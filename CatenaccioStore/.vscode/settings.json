@@ -17,7 +17,7 @@
                 "name": "Linux",
                 "description": "SFTP folder",
 
-                "host": "ipaddress", "port": 22,
+                "host": "68.183.5.49", "port": 22,
                 "user": "root", "password": "terces",
 
                 "dir": "/var/catenaccio",
