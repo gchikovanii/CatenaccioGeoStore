@@ -4,17 +4,17 @@
     <nav class="mx-3 my-3 text-uppercase fs-5 d-flex d-md-none dropdown">
       <div style="margin-left: 150px!important;" class="dropdown ms-3 me-5" style="text-decoration: none;" dropdown>
         <a style="cursor: pointer;" dropdownToggle class="dropdown-toggle">
-          Menu
+          {{'menu' | translate}}
         </a>
         <ul *dropdownMenu class="dropdown-menu dropdown-menu-right">
           <li class="py-1">
             <a class="dropdown-item" routerLink="/shop">{{'shop' | translate}}</a>
           </li>
           <li class="py-1">
-            <a class="dropdown-item" routerLink="/contact">Contact/</a>
+            <a class="dropdown-item" routerLink="/contact">{{'contact' | translate}}/</a>
           </li>
           <li class="py-1">
-            <a class="dropdown-item" routerLink="/">About Us</a>
+            <a class="dropdown-item" routerLink="/">{{'aboutUs' | translate}}</a>
           </li>
         </ul>
       </div>
@@ -33,10 +33,6 @@
         {{getCount(basket.baksetItems)}}
       </div>
     </a>
-
-
-
-
     <ng-container *ngIf="(accountService.currentUserSource$ | async) === null">
       <div class="dropdown ms-3 me-2" style="text-decoration: none;" dropdown>
         <a style="cursor: pointer;" dropdownToggle class="dropdown-toggle">
@@ -46,13 +42,13 @@
           <li class="py-1">
             <a routerLink="/login" class="dropdown-item aovv">
               <fa-icon [icon]="loginUser" class="me-3"></fa-icon>
-              <span>Login</span>
+              <span>{{'login' | translate}}</span>
             </a>
           </li>
           <li class="py-1">
             <a routerLink="/register" class="dropdown-item aovv">
               <fa-icon [icon]="registerUser" class="me-3"></fa-icon>
-              <span>Register</span>
+              <span>{{'register' | translate}}</span>
             </a>
           </li>
         </ul>
@@ -61,32 +57,34 @@
     </ng-container>
     
     <ng-container *ngIf="(accountService.currentUserSource$ | async) as user">
-      <div class="dropdown ms-3 me-5" style="cursor: pointer;" dropdown>
+      <div class="dropdown ms-3 me-2" style="cursor: pointer;" dropdown>
         <a dropdownToggle class="dropdown-toggle aovv">
-          <strong>{{user.displayName}}'s settings <fa-icon [icon]="settings" class="me-3"></fa-icon></strong>
+          <strong>{{user.displayName}}{{'apS' | translate}} {{'sett'| translate}} <fa-icon [icon]="settings" class="me-3"></fa-icon></strong>
         </a>
         <ul *dropdownMenu class="dropdown-menu dropdown-menu-right">
           <li class="py-1">
             <a routerLink="/basket" class="dropdown-item aovv">
               <fa-icon [icon]="cart" class="me-3"></fa-icon>
-              <span>View Basket</span>
+              <span>{{'vB' | translate}}</span>
             </a>
           </li>
           <li class="py-1">
             <a routerLink="/orders" class="dropdown-item aovv"><fa-icon [icon]="history" class="me-3"></fa-icon>
-              <span>View Orders</span>
+              <span>{{'vO'| translate}}</span>
             </a>
           </li>
           <div class="dropdown-divider"></div>
           <li class="py-1">
             <a (click)="accountService.logout()" class="dropdown-item aovv">
               <fa-icon [icon]="signout" class="me-3"></fa-icon>
-              <span>Log Out</span>
+              <span>{{'logout'| translate}}</span>
             </a>
           </li>
         </ul>
+        
       </div>
+      <app-lang></app-lang>
+
     </ng-container>
-    <!-- <app-lang></app-lang> -->
   </div>
 </nav>

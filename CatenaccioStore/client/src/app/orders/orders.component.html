@@ -8,10 +8,10 @@
     <table class="table table-hover" style="cursor: pointer;">
     <thead class="thead-light">
     <tr>
-    <th>Order</th>
-    <th>Date</th>
-    <th>Total</th>
-    <th>Status</th>
+    <th>{{'order'| translate}}</th>
+    <th>{{'date'| translate}}</th>
+    <th>{{'total'| translate}}</th>
+    <th>{{'status'| translate}}</th>
     </tr>
     </thead>
     <tbody>
@@ -20,13 +20,14 @@
     <td>{{order.orderDate | date: 'medium'}}</td>
     <td>{{order.total | currency}}</td> 
     <ng-container *ngIf="order.orderStatus.toString() === 'Payment Failed'">
-        <td class="text-danger">{{order.orderStatus}}</td>
+        <td class="text-danger">{{'pF' | translate}}</td>
+
     </ng-container>
     <ng-container *ngIf="order.orderStatus.toString() === 'Pending'">
-        <td style="color: #0466c8;">{{order.orderStatus}}</td>
+        <td style="color: #0466c8;">{{'pp' | translate}}</td>
     </ng-container>
     <ng-container *ngIf="order.orderStatus.toString() === 'Payment Recevied'">
-        <td class="text-success">{{order.orderStatus}}</td>
+        <td class="text-success">{{'prec' | translate}}</td>
     </ng-container>
     </tr>
     </tbody>

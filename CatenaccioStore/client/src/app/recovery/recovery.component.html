@@ -5,30 +5,30 @@
                 <div class="col-xl-6 col-lg-8">
                     <div class="tp-login-wrapper">
                         <div class="tp-login-top text-center mb-30">
-                            <h3 class="tp-login-title">Reset Password</h3>
-                            <p class="tp-login-subtitle">Enter New Password</p>
+                            <h3 class="tp-login-title">{{'rp'| translate}}</h3>
+                            <p class="tp-login-subtitle">{{'enp'| translate}}</p>
                         </div>
                         <form (ngSubmit)="resetPassword()" class="tp-login-form">
                             <div class="tp-login-input-wrapper">
                                 <div class="tp-login-input-box">
                                     <div class="tp-login-input">
-                                        <input id="password" type="password" placeholder="Password" [(ngModel)]="newPassword" name="newPassword">
+                                        <input id="password" type="password" placeholder="{{'password'|translate}}" [(ngModel)]="newPassword" name="newPassword">
                                     </div>
                                 </div>
                             </div>
                             <div style="margin-top: 20px;" class="tp-login-input-wrapper">
                                 <div class="tp-login-input-box">
                                     <div class="tp-login-input">
-                                        <input id="rePassword" type="password" placeholder="Repeat Password" [(ngModel)]="rePassword" name="rePassword">
+                                        <input id="rePassword" type="password" placeholder="{{'rePassword'|translate}}" [(ngModel)]="rePassword" name="rePassword">
                                     </div>
                                 </div>
                             </div>
                             <div class="tp-login-bottom mb-15">
-                                <button type="submit" class="tp-login-btn w-100">Reset Password</button>
+                                <button type="submit" class="tp-login-btn w-100">{{'rp'| translate}}</button>
                             </div>
                         </form>
                         <div class="tp-login-suggestions text-center mt-3">
-                            <span>Remember your password? <a href="login.html">Log in</a></span>
+                            <span>{{'rem'|translate}} <a href="login.html">{{'login'|translate}}</a></span>
                         </div>
                     </div>
                 </div>

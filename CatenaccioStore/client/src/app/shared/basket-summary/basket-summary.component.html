@@ -2,11 +2,11 @@
     <table class="table">
         <thead class="text-uppercase" [class.bg-light]="isBasket">
             <tr>
-                <th><div class="py-2">Product</div></th>
-                <th><div class="py-2">Price</div></th>
-                <th [class.text-center]="!isBasket"><div class="py-2">Quantity</div></th>
-                <th><div class="py-2">Total</div></th>
-                <th *ngIf="isBasket" ><div class="py-2">Remove</div></th>
+                <th><div class="py-2">{{'product'| translate}}</div></th>
+                <th><div class="py-2">{{'price'| translate}}</div></th>
+                <th [class.text-center]="!isBasket"><div class="py-2">{{'quantitty'| translate}}</div></th>
+                <th><div class="py-2">{{'total'| translate}}</div></th>
+                <th *ngIf="isBasket" ><div class="py-2">{{'remove'| translate}}</div></th>
             </tr>
         </thead>
         <tbody>
@@ -21,7 +21,7 @@
                                 </a>
                             </h5>
                             <span class="text-muted fst-italic">
-                                Type: {{item.type}}
+                                {{'type'| translate}}: {{item.type}}
                             </span>
                         </div>
                     </div>

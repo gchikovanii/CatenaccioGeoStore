@@ -15,12 +15,16 @@ export class CheckoutDeliveryComponent  implements OnInit{
   deliveryMethods: DeliveryMethod[] = [];
   leftAngle = faAngleLeft;
   rightAngle = faAngleRight;
+  lang! :string | null;
+
 
   constructor(private checkoutService:CheckoutService, private basketService: BasketService){}
   ngOnInit(): void {
     this.checkoutService.getDeliveryMethods().subscribe({
       next: dm => this.deliveryMethods = dm
     })
+    this.lang = localStorage.getItem('lang')
+
   }
 
   setShippingPrice(deliveryMethod: DeliveryMethod){

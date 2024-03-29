@@ -2,7 +2,7 @@
     <div class="col-3">
         <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
             <div class="text-center mb-4">
-                <h1 class="mb-3">Regsiter</h1>
+                <h1 class="mb-3">{{'register'|translate}}</h1>
             </div>
                 <app-text-input [formControl]="registerForm.controls['displayName']" [label]="'Display Name'"></app-text-input>
                 <app-text-input [formControl]="registerForm.controls['email']" [label]="'Email Address'"></app-text-input>
@@ -13,7 +13,7 @@
                 </ul>
               
                 <div class="d-grid">
-                <button [disabled]="registerForm.invalid" class="btn custom-btn-primary btn-lg mt-3" type="submit">Sign Up</button>
+                <button [disabled]="registerForm.invalid" class="btn custom-btn-primary btn-lg mt-3" type="submit">{{'signUp'|translate}}</button>
               </div>
         </form>
     </div>

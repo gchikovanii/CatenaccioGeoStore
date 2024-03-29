@@ -18,6 +18,7 @@ namespace CatenaccioStore.Infrastructure.Repositories.Implementation
         {
             var basket = await _basketRepository.GetBasketAsync(basketId);
             var items = new List<OrderItem>();
+
             foreach (var item in basket.BaksetItems)
             {
                 var productItem = await _unitOfWork.Repository<Product>().GetByIdAsync(token,item.Id);
@@ -43,6 +44,11 @@ namespace CatenaccioStore.Infrastructure.Repositories.Implementation
             {
                 order = new Order(items, buyerEmail, basket.PaymentIntentId, shippingAdderss, deliveryMethod, subTotal);
                 _unitOfWork.Repository<Order>().Add(order);
+                foreach (var item in basket.BaksetItems)
+                {
+                    var productItem = await _unitOfWork.Repository<Product>().GetByIdAsync(token, item.Id);
+                    productItem.Quantity -= item.Quantity;
+                }
             }
             
             var result = await _unitOfWork.Complete();

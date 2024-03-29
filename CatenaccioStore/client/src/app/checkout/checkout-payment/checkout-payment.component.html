@@ -8,7 +8,7 @@
         <div class="col-6">
             <div class="form-floating">
                 <div class="form-control" #cardNumber>
-                    <label>Card Number</label>
+                    <label>{{'cno' | translate}}</label>
                     <span class="text-danger">{{cardErrors}}</span>
                 </div>
             </div>
@@ -16,7 +16,7 @@
         <div class="col-3">
             <div class="form-floating">
                 <div class="form-control" #cardExpiry>
-                    <label>Expiry Date</label>
+                    <label>{{'exp' | translate}}</label>
                 </div>
             </div>
         </div>
@@ -31,10 +31,10 @@
 </div>
 <div class="d-flex justify-content-between flex-row mb-5">
     <button class="btn btn-outline custom-outline-primary" cdkStepperPrevious>
-        <fa-icon [icon]="leftAngle" ></fa-icon> Back to Review
+        <fa-icon [icon]="leftAngle" ></fa-icon>{{'btor' | translate}} 
     </button>
     <button [disabled]="loading || !paymentFormComplete" class="btn custom-btn-info" (click)="submitOrder()">
-        Submit Order <fa-icon [icon]="rightAngle"></fa-icon> 
+        {{'submitOrder' | translate}} <fa-icon [icon]="rightAngle"></fa-icon> 
         <fa-icon *ngIf="loading" [icon]="spinner" class="spin"></fa-icon>
     </button>
 </div>

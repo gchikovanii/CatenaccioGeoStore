@@ -18,7 +18,13 @@ export class CheckoutAddressComponent {
 
   saveUserAddress(){
     this.accountService.updateUserAaddress(this.checkoutForm?.get('addressForm')?.value).subscribe({
-      next: () => {this.snackBar.open('Address Saved!'); this.checkoutForm?.get('addressForm')?.reset(this.checkoutForm?.get('addressForm')?.value)}
+      next: () => {this.openSnackBar('Address Saved!','Success'); this.checkoutForm?.get('addressForm')?.reset(this.checkoutForm?.get('addressForm')?.value)}
     })
+  }
+
+  openSnackBar(message: string, action: string) {
+    this.snackBar.open(message, action, {
+      duration: 3000, 
+    });
   }
 }
