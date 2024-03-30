@@ -10,6 +10,7 @@ D:\CatenacccioStore\CatenaccioStore\publish\Azure.Core.dll
 D:\CatenacccioStore\CatenaccioStore\publish\Azure.Identity.dll
 D:\CatenacccioStore\CatenaccioStore\publish\Mapster.dll
 D:\CatenacccioStore\CatenaccioStore\publish\Mapster.Core.dll
+D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.AspNetCore.Cryptography.Internal.dll
 D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -21,18 +22,10 @@ D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.EntityFrameworkCore.Abstra
 D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.EntityFrameworkCore.Relational.dll
 D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.EntityFrameworkCore.Sqlite.dll
 D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.Extensions.Caching.Abstractions.dll
-D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.Extensions.Caching.Memory.dll
-D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.Extensions.Configuration.Abstractions.dll
-D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.Extensions.DependencyInjection.dll
-D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.Extensions.DependencyModel.dll
 D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.Extensions.Identity.Core.dll
 D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.Extensions.Identity.Stores.dll
-D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.Extensions.Logging.dll
-D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.Extensions.Logging.Abstractions.dll
 D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.Extensions.Options.dll
-D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.Extensions.Primitives.dll
 D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.Identity.Client.dll
 D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.Identity.Client.Extensions.Msal.dll
 D:\CatenacccioStore\CatenaccioStore\publish\Microsoft.IdentityModel.Abstractions.dll
@@ -55,7 +48,6 @@ D:\CatenacccioStore\CatenaccioStore\publish\Stripe.net.dll
 D:\CatenacccioStore\CatenaccioStore\publish\System.Configuration.ConfigurationManager.dll
 D:\CatenacccioStore\CatenaccioStore\publish\System.Drawing.Common.dll
 D:\CatenacccioStore\CatenaccioStore\publish\System.IdentityModel.Tokens.Jwt.dll
-D:\CatenacccioStore\CatenaccioStore\publish\System.IO.Pipelines.dll
 D:\CatenacccioStore\CatenaccioStore\publish\System.Memory.Data.dll
 D:\CatenacccioStore\CatenaccioStore\publish\System.Runtime.Caching.dll
 D:\CatenacccioStore\CatenaccioStore\publish\System.Security.Cryptography.ProtectedData.dll
