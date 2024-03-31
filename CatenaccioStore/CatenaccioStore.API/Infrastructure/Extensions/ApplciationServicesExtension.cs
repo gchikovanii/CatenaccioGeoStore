@@ -57,7 +57,7 @@ namespace CatenaccioStore.API.Infrastructure.Extensions
             {
                 opt.AddPolicy("CorsPolicy", policy =>
                 {
-                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200");
+                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://64.227.126.108","http://localhost:4200","https://localhost:4200");
                 });
             });
             return services;
